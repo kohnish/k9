@@ -1,36 +1,3 @@
-"      _               _                 _  __
-"     | |__   __ _  __| | __      _____ | |/ _|
-"     | '_ \ / _` |/ _` | \ \ /\ / / _ \| | |_
-"     | |_) | (_| | (_| |  \ V  V / (_) | |  _|
-"     |_.__/ \__,_|\__,_|   \_/\_/ \___/|_|_|
-"
-"      I am the Bad Wolf. I create myself.
-"       I take the words. I scatter them in time and space.
-"        A message to lead myself here.
-"
-" A Vim colorscheme pieced together by Steve Losh.
-" Available at http://stevelosh.com/projects/badwolf/
-"
-" Why? {{{
-"
-" After using Molokai for quite a long time, I started longing for
-" a replacement.
-"
-" I love Molokai's high contrast and gooey, saturated tones, but it can be
-" a little inconsistent at times.
-"
-" Also it's winter here in Rochester, so I wanted a color scheme that's a bit
-" warmer.  A little less blue and a bit more red.
-"
-" And so Bad Wolf was born.  I'm no designer, but designers have been scattering
-" beautiful colors through time and space long before I came along.  I took
-" advantage of that and reused some of my favorites to lead me to this scheme.
-"
-" }}}
-
-" Supporting code -------------------------------------------------------------
-" Preamble {{{
-
 if !has("gui_running") && &t_Co != 88 && &t_Co != 256
     finish
 endif
@@ -67,12 +34,15 @@ let s:bwc.coal = ['000000', 16]
 " All of the Gravel colors are based on a brown from Clouds Midnight.
 let s:bwc.brightgravel   = ['d9cec3', 252]
 let s:bwc.lightgravel    = ['998f84', 245]
-let s:bwc.gravel         = ['857f78', 243]
+"let s:bwc.gravel         = ['857f78', 243]
+let s:bwc.gravel         = ['857f78', 247]
 let s:bwc.mediumgravel   = ['666462', 241]
-let s:bwc.deepgravel     = ['45413b', 238]
+"let s:bwc.deepergravel   = ['35322d', 236]
+let s:bwc.deepgravel     = ['45413b', 247]
 let s:bwc.deepergravel   = ['35322d', 236]
 let s:bwc.darkgravel     = ['242321', 235]
-let s:bwc.blackgravel    = ['1c1b1a', 233]
+"let s:bwc.blackgravel    = ['1c1b1a', 233]
+let s:bwc.blackgravel    = ['1c1b1a', 234]
 let s:bwc.blackestgravel = ['141413', 232]
 
 " A color sampled from a highlight in a photo of a glass of Dale's Pale Ale on
