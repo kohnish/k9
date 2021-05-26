@@ -1,3 +1,9 @@
+
+" Based on Badwolf, a vim colorscheme pieced together by Steve Losh.
+" Available at http://stevelosh.com/projects/badwolf/
+" It fixes the background colour and terminal status bar colour
+
+
 if !has("gui_running") && &t_Co != 88 && &t_Co != 256
     finish
 endif
@@ -8,7 +14,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name = "badwolf"
+let g:colors_name = "k9"
 
 if !exists("g:badwolf_html_link_underline") " {{{
     let g:badwolf_html_link_underline = 1
@@ -159,7 +165,7 @@ call s:HL('Folded', 'mediumgravel', 'bg', 'none')
 
 call s:HL('VertSplit', 'lightgravel', 'bg', 'none')
 
-call s:HL('CursorLine',   '', 'darkgravel', 'none')
+call s:HL('CursorLine',   '', 'deepergravel', 'none')
 call s:HL('CursorColumn', '', 'darkgravel')
 call s:HL('ColorColumn',  '', 'darkgravel')
 
@@ -182,6 +188,8 @@ call s:HL('Underlined', 'fg', '', 'underline')
 
 call s:HL('StatusLine',   'coal', 'tardis',     'bold')
 call s:HL('StatusLineNC', 'snow', 'deepgravel', 'bold')
+call s:HL('StatusLineTerm',   'coal', 'tardis',     'bold')
+call s:HL('StatusLineTermNC', 'snow', 'deepgravel', 'bold')
 
 call s:HL('Directory', 'dirtyblonde', '', 'bold')
 
