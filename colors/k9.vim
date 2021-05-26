@@ -1,7 +1,6 @@
-
-" Based on Badwolf, a vim colorscheme pieced together by Steve Losh.
+" VIM colour scheme based on Badwolf which is made by Steve Losh.
 " Available at http://stevelosh.com/projects/badwolf/
-" It fixes the background colour and terminal status bar colour
+" K9 has minor fixes for the background colour and terminal status bar colour
 
 
 if !has("gui_running") && &t_Co != 88 && &t_Co != 256
