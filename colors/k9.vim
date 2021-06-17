@@ -292,10 +292,24 @@ call HL('PmenuThumb', 'brightgravel')
 # }}}
 # Diffs {{{
 
-call HL('DiffDelete', 'coal', 'coal')
-call HL('DiffAdd',    '',     'deepergravel')
-call HL('DiffChange', '',     'darkgravel')
-call HL('DiffText',   'snow', 'deepergravel', 'bold')
+#call HL('DiffDelete', 'coal', 'coal')
+#call HL('DiffAdd',    '',     'deepergravel')
+#call HL('DiffChange', '',     'darkgravel')
+#call HL('DiffText',   'snow', 'deepergravel', 'bold')
+g:bwc.darkred   = ['5f0000', 52]
+g:bwc.darkgreen   = ['005f00', 22]
+g:bwc.darkblue   = ['005fd7', 26]
+g:bwc.white   = ['ffffff', 15]
+g:bwc.yellow   = ['af8700', 136]
+call HL('DiffDelete', 'white', 'darkred')
+call HL('DiffAdd',    'white',     'darkgreen')
+call HL('DiffChange', 'white',     'darkblue')
+call HL('DiffText',   'white', 'yellow', 'bold')
+
+#call s:X("DiffAdd","D2EBBE","437019","","White","DarkGreen")
+#call s:X("DiffDelete","40000A","700009","","DarkRed","DarkRed")
+#call s:X("DiffChange","","2B5B77","","White","DarkBlue")
+#call s:X("DiffText","8fbfdc","000000","reverse","Yellow","")
 
 # }}}
 # Spelling {{{
@@ -643,4 +657,3 @@ call HL('VimBracket', 'dress', '', 'none')
 # }}}
 
 # }}}
-
