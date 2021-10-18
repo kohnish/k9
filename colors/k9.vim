@@ -292,11 +292,15 @@ call s:HL('PmenuThumb', 'brightgravel')
 
 " }}}
 " Diffs {{{
-
-call s:HL('DiffDelete', 'coal', 'coal')
-call s:HL('DiffAdd',    '',     'deepergravel')
-call s:HL('DiffChange', '',     'darkgravel')
-call s:HL('DiffText',   'snow', 'deepergravel', 'bold')
+let g:bwc.darkred   = ['5f0000', 52]
+let g:bwc.darkgreen   = ['005f00', 22]
+let g:bwc.darkblue   = ['005fd7', 26]
+let g:bwc.white   = ['ffffff', 15]
+let g:bwc.yellow   = ['af8700', 136]
+call HL('DiffDelete', 'white', 'darkred')
+call HL('DiffAdd',    'white',     'darkgreen')
+call HL('DiffChange', 'white',     'darkblue')
+call HL('DiffText',   'white', 'yellow', 'bold')
 
 " }}}
 " Spelling {{{
