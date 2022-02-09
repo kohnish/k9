@@ -427,8 +427,8 @@ HL('gitDiff', 'lightgravel', '')
 
 HL('diffRemoved', 'dress', '')
 HL('diffAdded', 'lime', '')
-HL('diffFile', 'snow', 'taffy', 'bold')
-HL('diffNewFile', 'snow', 'taffy', 'bold')
+HL('diffFile', 'snow', 'darkgravel', 'bold')
+HL('diffNewFile', 'snow', 'darkgravel', 'bold')
 
 HL('diffLine', 'coal', 'orange', 'bold')
 HL('diffSubname', 'orange', '', 'none')
