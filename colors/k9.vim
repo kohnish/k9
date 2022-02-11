@@ -41,7 +41,6 @@ g_bwc.dirtyblonde = ['f4cf86', 222]
 
 # Delicious, chewy red from Made of Code for the poppiest highlights.
 g_bwc.taffy = ['ff2c4b', 196]
-g_bwc.darkred = ['#870000', 88]
 
 # Another chewy accent, but use sparingly!
 g_bwc.saltwatertaffy = ['8cffba', 121]
@@ -165,8 +164,8 @@ HL('ModeMsg',    'dirtyblonde', '',   'bold')
 #HL('Question',   'dirtyblonde', '',   'bold')
 #HL('WarningMsg', 'dress',       '',   'bold')
 HL('Question',   'snow', '',   'bold')
-HL('WarningMsg', 'dirtyblonde',       '',   'bold')
-HL('ErrorMsg',   'snow',       'taffy', 'bold')
+HL('WarningMsg', 'orange',       '',   'bold')
+HL('ErrorMsg',   'taffy',       'bg', 'underline')
 
 # This is a ctags tag, not an HTML one.  'Something you can use c-] on'.
 HL('Tag', '', '', 'bold')
