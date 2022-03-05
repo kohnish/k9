@@ -176,7 +176,8 @@ HL('Tag', '', '', 'bold')
 # }}}
 # Gutter {{{
 
-HL('LineNr',     'mediumgravel', g_gutter)
+#HL('LineNr',     'mediumgravel', g_gutter)
+HL('LineNr',     'mediumgravel')
 HL('SignColumn', '',             g_gutter)
 HL('FoldColumn', 'mediumgravel', g_gutter)
 
@@ -252,7 +253,7 @@ HL('Ignore', 'gravel', '',      '')
 # }}}
 # Completion Menu {{{
 
-HL('Pmenu', 'plain', 'deepergravel')
+#HL('Pmenu', 'plain', 'deepgravel')
 HL('PmenuSel', 'coal', 'tardis', 'bold')
 HL('PmenuSbar', '', 'deepergravel')
 HL('PmenuThumb', 'brightgravel')
