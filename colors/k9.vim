@@ -254,7 +254,8 @@ HL('Ignore', 'gravel', '',      '')
 # Completion Menu {{{
 
 #HL('Pmenu', 'plain', 'deepgravel')
-HL('PmenuSel', 'coal', 'tardis', 'bold')
+#HL('PmenuSel', 'coal', 'tardis', 'bold')
+HL('PmenuSel', 'plain', 'deepgravel', 'bold')
 HL('PmenuSbar', '', 'deepergravel')
 HL('PmenuThumb', 'brightgravel')
 
