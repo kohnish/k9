@@ -27,6 +27,7 @@ g_bwc.mediumgravel   = ['666462', 241]
 #g_bwc.deepergravel   = ['35322d', 236]
 g_bwc.deepgravel     = ['45413b', 247]
 g_bwc.deepergravel   = ['35322d', 236]
+g_bwc.deepishgravel   = ['35322d', 238]
 g_bwc.darkgravel     = ['242321', 235]
 #g_bwc.blackgravel    = ['1c1b1a', 233]
 g_bwc.blackgravel    = ['1c1b1a', 234]
@@ -177,7 +178,7 @@ HL('Tag', '', '', 'bold')
 # Gutter {{{
 
 #HL('LineNr',     'mediumgravel', g_gutter)
-HL('LineNr',     'mediumgravel')
+HL('LineNr',     'deepishgravel')
 HL('SignColumn', '',             g_gutter)
 HL('FoldColumn', 'mediumgravel', g_gutter)
 
@@ -253,9 +254,9 @@ HL('Ignore', 'gravel', '',      '')
 # }}}
 # Completion Menu {{{
 
-#HL('Pmenu', 'plain', 'deepgravel')
-#HL('PmenuSel', 'coal', 'tardis', 'bold')
-HL('PmenuSel', 'plain', 'deepgravel', 'bold')
+HL('Pmenu', 'coal', 'lightgravel')
+HL('PmenuSel', 'coal', 'tardis', 'bold')
+#HL('PmenuSel', 'plain', 'deepgravel', 'bold')
 HL('PmenuSbar', '', 'deepergravel')
 HL('PmenuThumb', 'brightgravel')
 
