@@ -18,6 +18,11 @@ g_bwc.plain = ['f8f6f2', 15]
 g_bwc.snow = ['ffffff', 15]
 g_bwc.coal = ['000000', 16]
 
+g_bwc.darkred   = ['5f0000', 52]
+g_bwc.darkgreen   = ['005f00', 22]
+g_bwc.darkblue   = ['005fd7', 26]
+g_bwc.yellow   = ['af8700', 136]
+
 # All of the Gravel colors are based on a brown from Clouds Midnight.
 g_bwc.brightgravel   = ['d9cec3', 252]
 g_bwc.lightgravel    = ['998f84', 245]
@@ -270,15 +275,10 @@ HL('PmenuThumb', 'brightgravel')
 #HL('DiffAdd',    '',     'deepergravel')
 #HL('DiffChange', '',     'darkgravel')
 #HL('DiffText',   'snow', 'deepergravel', 'bold')
-g_bwc.darkred   = ['5f0000', 52]
-g_bwc.darkgreen   = ['005f00', 22]
-g_bwc.darkblue   = ['005fd7', 26]
-g_bwc.white   = ['ffffff', 15]
-g_bwc.yellow   = ['af8700', 136]
-HL('DiffDelete', 'white', 'darkred')
-HL('DiffAdd',    'white',     'darkgreen')
-HL('DiffChange', 'white',     'darkblue')
-HL('DiffText',   'white', 'yellow', 'bold')
+HL('DiffDelete', 'snow', 'darkred')
+HL('DiffAdd',    'snow',     'darkgreen')
+HL('DiffChange', 'snow',     'darkblue')
+HL('DiffText',   'snow', 'yellow', 'bold')
 
 # }}}
 # Spelling {{{
