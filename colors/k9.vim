@@ -138,6 +138,9 @@ HL('TabLineFill', 'plain', g_tabline, 'none')
 HL('TabLineSel', 'coal', 'tardis', 'none')
 
 HL('MatchParen', 'dalespale', 'darkgravel', 'bold')
+HL('QuickFixLine', 'snow', 'darkgravel', 'none')
+HL('qfLineNr', 'snow', 'darkgravel', 'none')
+HL('qfFileName', 'snow', 'darkgravel', 'none')
 
 HL('NonText',    'deepgravel', 'bg')
 HL('SpecialKey', 'deepgravel', 'bg')
