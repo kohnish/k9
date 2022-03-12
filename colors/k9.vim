@@ -46,7 +46,8 @@ g_bwc.dalespale = ['fade3e', 221]
 g_bwc.dirtyblonde = ['f4cf86', 222]
 
 # Delicious, chewy red from Made of Code for the poppiest highlights.
-g_bwc.taffy = ['ff2c4b', 196]
+#g_bwc.taffy = ['ff2c4b', 196]
+g_bwc.taffy   = ['ff0000', 196]
 
 # Another chewy accent, but use sparingly!
 g_bwc.saltwatertaffy = ['8cffba', 121]
@@ -67,7 +68,7 @@ g_bwc.orange = ['ffa724', 214]
 g_bwc.lime = ['aeee00', 154]
 
 # Rose's dress in The Idiot's Lantern.
-g_bwc.dress = ['ff9eb8', 211]
+g_bwc.dress = ['ff87af', 211]
 
 # Another play on the brown from Clouds Midnight.  I love that color.
 g_bwc.toffee = ['b88853', 137]
