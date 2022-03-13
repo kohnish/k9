@@ -186,8 +186,7 @@ HL('Tag', '', '', 'bold')
 # }}}
 # Gutter {{{
 
-#HL('LineNr',     'mediumgravel', g_gutter)
-HL('LineNr',     'deepishgravel')
+HL('LineNr',     'mediumgravel', g_gutter)
 HL('SignColumn', '',             g_gutter)
 HL('FoldColumn', 'mediumgravel', g_gutter)
 
