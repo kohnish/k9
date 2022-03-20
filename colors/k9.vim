@@ -45,8 +45,8 @@ g_bwc.dalespale = ['fade3e', 221]
 g_bwc.dirtyblonde = ['f4cf86', 222]
 
 # Delicious, chewy red from Made of Code for the poppiest highlights.
-g_bwc.taffy = ['ff2c4b', 196]
-#g_bwc.taffy   = ['ff0000', 196]
+#g_bwc.taffy = ['ff2c4b', 196]
+g_bwc.taffy   = ['ff0000', 196]
 
 # Another chewy accent, but use sparingly!
 g_bwc.saltwatertaffy = ['8cffba', 121]
