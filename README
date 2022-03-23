@@ -1,4 +1,5 @@
 K9
 ========
-Modified version of vim colorscheme badwolf  
-Also inspired by jellybeans for clear diff colours for vimdiff and vim signify
+Modified version of vim colorscheme badwolf rewritten in vim9script.
+Also inspired by jellybeans for clear diff colours for vimdiff and vim signify.
+Pmenu is also modified for LSP.
