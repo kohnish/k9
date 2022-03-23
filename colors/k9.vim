@@ -27,11 +27,12 @@ g_bwc.yellow   = ['af8700', 136]
 g_bwc.brightgravel   = ['d9cec3', 252]
 g_bwc.lightgravel    = ['998f84', 245]
 #g_bwc.gravel         = ['857f78', 243]
-g_bwc.gravel         = ['767676', 247]
+g_bwc.gravel         = ['9e9e9e', 247]
 g_bwc.mediumgravel   = ['666462', 241]
 g_bwc.deepgravel     = ['45413b', 238]
 g_bwc.deepergravel   = ['35322d', 236]
-g_bwc.darkgravel     = ['242321', 235]
+#g_bwc.darkgravel     = ['242321', 235]
+g_bwc.darkgravel     = ['121212', 235]
 g_bwc.blackgravel    = ['1c1b1a', 233]
 g_bwc.blackestgravel = ['141413', 232]
 
@@ -44,7 +45,7 @@ g_bwc.dirtyblonde = ['f4cf86', 222]
 
 # Delicious, chewy red from Made of Code for the poppiest highlights.
 #g_bwc.taffy = ['ff2c4b', 196]
-g_bwc.taffy = ['ff003f', 196]
+g_bwc.taffy = ['ff0000', 196]
 
 # Another chewy accent, but use sparingly!
 g_bwc.saltwatertaffy = ['8cffba', 121]
