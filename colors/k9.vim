@@ -3,6 +3,12 @@ vim9script
 # Available at http://stevelosh.com/projects/badwolf/
 # K9 has minor fixes for the background colour and terminal status bar colour
 
+highlight clear
+
+if exists("syntax_on")
+    syntax reset
+endif
+
 set background=dark
 
 # }}}
