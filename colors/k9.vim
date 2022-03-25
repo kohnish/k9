@@ -24,10 +24,11 @@ g_bwc.plain = ['f8f6f2', 15]
 g_bwc.snow = ['ffffff', 15]
 g_bwc.coal = ['000000', 16]
 
-g_bwc.darkred   = ['5f0000', 52]
-g_bwc.darkgreen   = ['005f00', 22]
-g_bwc.darkblue   = ['005fd7', 26]
-g_bwc.yellow   = ['af8700', 136]
+g_bwc.red = ['ff0000', 196]
+g_bwc.darkred = ['5f0000', 52]
+g_bwc.darkgreen = ['005f00', 22]
+g_bwc.darkblue = ['005fd7', 26]
+g_bwc.yellow = ['af8700', 136]
 
 # All of the Gravel colors are based on a brown from Clouds Midnight.
 g_bwc.brightgravel   = ['d9cec3', 252]
@@ -51,7 +52,7 @@ g_bwc.dirtyblonde = ['f4cf86', 222]
 
 # Delicious, chewy red from Made of Code for the poppiest highlights.
 #g_bwc.taffy = ['ff2c4b', 196]
-g_bwc.taffy = ['ff0000', 196]
+g_bwc.taffy = ['ff2c4b', 197]
 
 # Another chewy accent, but use sparingly!
 g_bwc.saltwatertaffy = ['8cffba', 121]
@@ -179,7 +180,7 @@ HL('ModeMsg',    'dirtyblonde', '',   'bold')
 #HL('WarningMsg', 'dress',       '',   'bold')
 HL('Question',   'snow', '',   'bold')
 HL('WarningMsg', 'orange',       '',   'bold')
-HL('ErrorMsg',   'taffy',       'bg', 'underline')
+HL('ErrorMsg',   'red',       'bg', 'underline')
 
 # This is a ctags tag, not an HTML one.  'Something you can use c-] on'.
 HL('Tag', '', '', 'bold')
