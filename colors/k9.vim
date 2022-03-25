@@ -260,7 +260,7 @@ HL('Typedef', 'taffy', '', 'bold')
 HL('Exception', 'lime', '', 'bold')
 
 # Misc
-HL('Error',  'snow',   'taffy', 'bold')
+HL('Error',  'snow',   'red', 'bold')
 HL('Debug',  'snow',   '',      'bold')
 HL('Ignore', 'gravel', '',      '')
 
