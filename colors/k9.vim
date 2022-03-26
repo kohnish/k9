@@ -83,6 +83,39 @@ g_bwc.toffee = ['b88853', 137]
 g_bwc.coffee    = ['c7915b', 173]
 g_bwc.darkroast = ['88633f', 95]
 
+#           0    black
+#           1    dark red
+#           2    dark green
+#           3    brown
+#           4    dark blue
+#           5    dark magenta
+#           6    dark cyan
+#           7    light grey
+#           8    dark grey
+#           9    red
+#           10   green
+#           11   yellow
+#           12   blue
+#           13   magenta
+#           14   cyan
+#           15   white
+g:terminal_ansi_colors = [
+            \ '#000000',
+            \ '#af0000',
+            \ '#008700',
+            \ '#5f8700',
+            \ '#0a9dff',
+            \ '#878787',
+            \ '#005f87',
+            \ '#444444',
+            \ '#bcbcbc',
+            \ '#d70000',
+            \ '#d70087',
+            \ '#8700af',
+            \ '#0a9dff',
+            \ '#d75f00',
+            \ '#005faf',
+            \ '#ffffff']
 # }}}
 # Highlighting Function {{{
 def HL(group: string, fg: string, ...vargs: list<string>): void
