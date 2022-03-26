@@ -99,25 +99,26 @@ g_bwc.darkroast = ['88633f', 95]
 # 13   magenta
 # 14   cyan
 # 15   white
-g:terminal_ansi_colors = [
-            \ '#000000',
-            \ '#af0000',
-            \ '#008700',
-            \ '#5f8700',
-            \ '#0a9dff',
-            \ '#878787',
-            \ '#00ffff',
-            \ '#444444',
-            \ '#bcbcbc',
-            \ '#d70000',
-            \ '#d70087',
-            \ '#8700af',
-            \ '#0a9dff',
-            \ '#d75f00',
-            \ '#00ffff',
-            \ '#ffffff']
-# }}}
-# Highlighting Function {{{
+if &termguicolors
+    g:terminal_ansi_colors = [
+                \ '#000000',
+                \ '#af0000',
+                \ '#008700',
+                \ '#5f8700',
+                \ '#0a9dff',
+                \ '#878787',
+                \ '#00ffff',
+                \ '#444444',
+                \ '#bcbcbc',
+                \ '#d70000',
+                \ '#d70087',
+                \ '#8700af',
+                \ '#0a9dff',
+                \ '#d75f00',
+                \ '#00ffff',
+                \ '#ffffff']
+endif
+
 def HL(group: string, fg: string, ...vargs: list<string>): void
     var histring = 'hi ' .. group .. ' '
 
@@ -156,17 +157,10 @@ def HL(group: string, fg: string, ...vargs: list<string>): void
 
     execute histring
 enddef
-# }}}
-# Configuration Options {{{
+
 var g_gutter = 'blackgravel'
 var g_tabline = 'blackgravel'
 
-# }}}
-
-# Actual colorscheme ----------------------------------------------------------
-# Vanilla Vim {{{
-
-# General/UI {{{
 
 HL('Normal', 'plain', 'blackgravel')
 
