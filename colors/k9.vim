@@ -16,6 +16,15 @@ set background=dark
 
 var g_bwc = {}
 
+# Added normal colours without funky naming from badwolf
+g_bwc.red = ['ff0000', 196]
+g_bwc.darkred = ['5f0000', 52]
+g_bwc.darkgreen = ['005f00', 22]
+g_bwc.darkblue = ['005fd7', 26]
+g_bwc.yellow = ['af8700', 136]
+g_bwc.black = ['000000', 0]
+g_bwc.cyan = ['00ffff', 51]
+
 # The most basic of all our colors is a slightly tweaked version of the Molokai
 # Normal text.
 g_bwc.plain = ['f8f6f2', 15]
@@ -23,14 +32,6 @@ g_bwc.plain = ['f8f6f2', 15]
 # Pure and simple.
 g_bwc.snow = ['ffffff', 15]
 g_bwc.coal = ['000000', 16]
-
-g_bwc.red = ['ff0000', 196]
-g_bwc.darkred = ['5f0000', 52]
-g_bwc.darkgreen = ['005f00', 22]
-g_bwc.darkblue = ['005fd7', 26]
-g_bwc.yellow = ['af8700', 136]
-g_bwc.black = ['000000', 0]
-g_bwc.cyan = ['00ffff', 0]
 
 # All of the Gravel colors are based on a brown from Clouds Midnight.
 g_bwc.brightgravel   = ['d9cec3', 252]
