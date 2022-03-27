@@ -92,7 +92,7 @@ enddef
 # 0    black
 # 1    dark red
 # 2    dark green
-# 3    brown
+# 3    dark yellow
 # 4    dark blue
 # 5    dark magenta
 # 6    dark cyan
@@ -110,7 +110,7 @@ if &termguicolors
                 \ Html_colour("coal"),
                 \ Html_colour("red"),
                 \ Html_colour("lime"),
-                \ Html_colour("toffee"),
+                \ Html_colour("dirtyblonde"),
                 \ Html_colour("tardis"),
                 \ Html_colour("taffy"),
                 \ Html_colour("cyan"),
