@@ -30,6 +30,7 @@ g_bwc.darkgreen = ['005f00', 22]
 g_bwc.darkblue = ['005fd7', 26]
 g_bwc.yellow = ['af8700', 136]
 g_bwc.black = ['000000', 0]
+g_bwc.cyan = ['00ffff', 0]
 
 # All of the Gravel colors are based on a brown from Clouds Midnight.
 g_bwc.brightgravel   = ['d9cec3', 252]
@@ -83,6 +84,10 @@ g_bwc.toffee = ['b88853', 137]
 g_bwc.coffee    = ['c7915b', 173]
 g_bwc.darkroast = ['88633f', 95]
 
+def Html_colour(name: string): string
+    return "#" .. g_bwc[name][0]
+enddef
+
 # 0    black
 # 1    dark red
 # 2    dark green
@@ -101,22 +106,22 @@ g_bwc.darkroast = ['88633f', 95]
 # 15   white
 if &termguicolors
     g:terminal_ansi_colors = [
-                \ '#000000',
-                \ '#af0000',
-                \ '#008700',
-                \ '#5f8700',
-                \ '#0a9dff',
-                \ '#878787',
-                \ '#00ffff',
-                \ '#444444',
-                \ '#bcbcbc',
-                \ '#d70000',
-                \ '#d70087',
-                \ '#8700af',
-                \ '#0a9dff',
-                \ '#d75f00',
-                \ '#00ffff',
-                \ '#ffffff']
+                \ Html_colour("coal"),
+                \ Html_colour("red"),
+                \ Html_colour("lime"),
+                \ Html_colour("toffee"),
+                \ Html_colour("tardis"),
+                \ Html_colour("taffy"),
+                \ Html_colour("cyan"),
+                \ Html_colour("brightgravel"),
+                \ Html_colour("brightgravel"),
+                \ Html_colour("red"),
+                \ Html_colour("lime"),
+                \ Html_colour("dirtyblonde"),
+                \ Html_colour("tardis"),
+                \ Html_colour("taffy"),
+                \ Html_colour("cyan"),
+                \ Html_colour("snow")]
 endif
 
 def HL(group: string, fg: string, ...vargs: list<string>): void
