@@ -17,7 +17,7 @@ set background=dark
 var g_bwc = {}
 
 # Added normal colours without funky naming from badwolf
-g_bwc.red = ['ff0000', 196]
+g_bwc.red = ['d70000', 160]
 g_bwc.darkred = ['5f0000', 52]
 g_bwc.darkgreen = ['005f00', 22]
 g_bwc.darkblue = ['005fd7', 26]
