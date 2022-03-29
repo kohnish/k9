@@ -22,8 +22,8 @@ g_bwc.darkred = ['ac0000', 52]
 g_bwc.darkgreen = ['005f00', 22]
 g_bwc.darkblue = ['005fd7', 26]
 g_bwc.yellow = ['af8700', 136]
-g_bwc.cyan = ['00ffff', 51]
-g_bwc.darkcyan = ['46ffff', 51]
+g_bwc.cyan = ['6cbfa3', 51]
+g_bwc.darkcyan = ['66cdaa', 51]
 
 # The most basic of all our colors is a slightly tweaked version of the Molokai
 # Normal text.
