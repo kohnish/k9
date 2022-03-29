@@ -326,12 +326,17 @@ HL('DiffText',   'snow', 'yellow', 'bold')
 # }}}
 # Spelling {{{
 
-if has("spell")
-    HL('SpellCap', 'dalespale', 'bg', 'undercurl,bold', 'dalespale')
-    HL('SpellBad', '', 'bg', 'undercurl', 'dalespale')
-    HL('SpellLocal', '', '', 'undercurl', 'dalespale')
-    HL('SpellRare', '', '', 'undercurl', 'dalespale')
-endif
+#if has("spell")
+#    HL('SpellCap', 'dalespale', 'bg', 'undercurl,bold', 'dalespale')
+#    HL('SpellBad', '', 'bg', 'undercurl', 'dalespale')
+#    HL('SpellLocal', '', '', 'undercurl', 'dalespale')
+#    HL('SpellRare', '', '', 'undercurl', 'dalespale')
+#endif
+
+hi SpellBad   guisp=red    gui=undercurl guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE term=underline cterm=underline
+hi SpellCap   guisp=yellow gui=undercurl guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE term=underline cterm=underline
+hi SpellRare  guisp=blue   gui=undercurl guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE term=underline cterm=underline
+hi SpellLocal guisp=orange gui=undercurl guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE term=underline cterm=underline
 
 # }}}
 
