@@ -18,11 +18,12 @@ var g_bwc = {}
 
 # Added normal colours without funky naming from badwolf
 g_bwc.red = ['d70000', 160]
-g_bwc.darkred = ['5f0000', 52]
+g_bwc.darkred = ['ac0000', 52]
 g_bwc.darkgreen = ['005f00', 22]
 g_bwc.darkblue = ['005fd7', 26]
 g_bwc.yellow = ['af8700', 136]
 g_bwc.cyan = ['00ffff', 51]
+g_bwc.darkcyan = ['46ffff', 51]
 
 # The most basic of all our colors is a slightly tweaked version of the Molokai
 # Normal text.
@@ -51,10 +52,12 @@ g_bwc.dalespale = ['fade3e', 221]
 
 # A beautiful tan from Tomorrow Night.
 g_bwc.dirtyblonde = ['f4cf86', 222]
+g_bwc.darkdirtyblonde = ['eeb340', 222]
 
 # Delicious, chewy red from Made of Code for the poppiest highlights.
 #g_bwc.taffy = ['ff2c4b', 196]
 g_bwc.taffy = ['ff2c4b', 197]
+g_bwc.darktaffy = ['df0021', 197]
 
 # Another chewy accent, but use sparingly!
 g_bwc.saltwatertaffy = ['8cffba', 121]
@@ -67,12 +70,14 @@ g_bwc.saltwatertaffy = ['8cffba', 121]
 # * The cursor
 # * A REPL prompt
 g_bwc.tardis = ['0a9dff', 39]
+g_bwc.darktardis = ['0080d6', 39]
 
 # This one's from Mustang, not Florida!
 g_bwc.orange = ['ffa724', 214]
 
 # A limier green from Getafe.
 g_bwc.lime = ['aeee00', 154]
+g_bwc.darklime = ['688e00', 154]
 
 # Rose's dress in The Idiot's Lantern.
 g_bwc.dress = ['ff87af', 211]
@@ -107,14 +112,14 @@ enddef
 if &termguicolors
     g:terminal_ansi_colors = [
                 \ Html_colour("coal"),
-                \ Html_colour("red"),
-                \ Html_colour("lime"),
-                \ Html_colour("dirtyblonde"),
-                \ Html_colour("tardis"),
-                \ Html_colour("taffy"),
-                \ Html_colour("cyan"),
+                \ Html_colour("darkred"),
+                \ Html_colour("darklime"),
+                \ Html_colour("darkdirtyblonde"),
+                \ Html_colour("darktardis"),
+                \ Html_colour("darktaffy"),
+                \ Html_colour("darkcyan"),
                 \ Html_colour("brightgravel"),
-                \ Html_colour("brightgravel"),
+                \ Html_colour("lightgravel"),
                 \ Html_colour("red"),
                 \ Html_colour("lime"),
                 \ Html_colour("dirtyblonde"),
