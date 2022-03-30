@@ -24,6 +24,7 @@ g_bwc.darkblue = ['005fd7', 26]
 g_bwc.yellow = ['af8700', 136]
 g_bwc.cyan = ['6cbfa3', 51]
 g_bwc.darkcyan = ['66cdaa', 51]
+g_bwc.magenta = ['8cffba', 51]
 
 # The most basic of all our colors is a slightly tweaked version of the Molokai
 # Normal text.
@@ -112,19 +113,19 @@ enddef
 if &termguicolors
     g:terminal_ansi_colors = [
                 \ Html_colour("coal"),
-                \ Html_colour("darkred"),
+                \ Html_colour("taffy"),
                 \ Html_colour("darklime"),
-                \ Html_colour("darkdirtyblonde"),
-                \ Html_colour("darktardis"),
-                \ Html_colour("darktaffy"),
+                \ Html_colour("dirtyblonde"),
+                \ Html_colour("tardis"),
+                \ Html_colour("magenta"),
                 \ Html_colour("darkcyan"),
                 \ Html_colour("brightgravel"),
                 \ Html_colour("lightgravel"),
-                \ Html_colour("red"),
+                \ Html_colour("darktaffy"),
                 \ Html_colour("lime"),
                 \ Html_colour("dirtyblonde"),
                 \ Html_colour("tardis"),
-                \ Html_colour("taffy"),
+                \ Html_colour("magenta"),
                 \ Html_colour("cyan"),
                 \ Html_colour("snow")]
 endif
