@@ -52,8 +52,7 @@ g_bwc.blackestgravel = ['141413', 232]
 g_bwc.dalespale = ['fade3e', 221]
 
 # A beautiful tan from Tomorrow Night.
-#g_bwc.dirtyblonde = ['f4cf86', 222]
-g_bwc.dirtyblonde = ['ffd74f', 222]
+g_bwc.dirtyblonde = ['f4cf86', 222]
 g_bwc.darkdirtyblonde = ['eeb340', 222]
 
 # Delicious, chewy red from Made of Code for the poppiest highlights.
