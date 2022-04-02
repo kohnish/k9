@@ -24,7 +24,7 @@ g_bwc.darkblue = ['005fd7', 26]
 g_bwc.yellow = ['af8700', 136]
 g_bwc.cyan = ['6cbfa3', 51]
 g_bwc.darkcyan = ['66cdaa', 51]
-g_bwc.magenta = ['8cffba', 51]
+g_bwc.magenta = ['ff00ff', 51]
 
 # The most basic of all our colors is a slightly tweaked version of the Molokai
 # Normal text.
@@ -71,7 +71,7 @@ g_bwc.saltwatertaffy = ['8cffba', 121]
 # * The cursor
 # * A REPL prompt
 g_bwc.tardis = ['0a9dff', 39]
-g_bwc.darktardis = ['0080d6', 39]
+g_bwc.lighttardis = ['26a8ff', 39]
 
 # This one's from Mustang, not Florida!
 g_bwc.orange = ['ffa724', 214]
@@ -115,7 +115,7 @@ if &termguicolors
                 \ Html_colour("coal"),
                 \ Html_colour("taffy"),
                 \ Html_colour("darklime"),
-                \ Html_colour("dirtyblonde"),
+                \ Html_colour("darkdirtyblonde"),
                 \ Html_colour("tardis"),
                 \ Html_colour("magenta"),
                 \ Html_colour("darkcyan"),
@@ -124,8 +124,8 @@ if &termguicolors
                 \ Html_colour("darktaffy"),
                 \ Html_colour("lime"),
                 \ Html_colour("dirtyblonde"),
-                \ Html_colour("tardis"),
-                \ Html_colour("magenta"),
+                \ Html_colour("lighttardis"),
+                \ Html_colour("dress"),
                 \ Html_colour("cyan"),
                 \ Html_colour("snow")]
 endif
