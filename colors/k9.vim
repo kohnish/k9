@@ -24,7 +24,6 @@ g_bwc.darkblue = ['005fd7', 26]
 g_bwc.yellow = ['af8700', 136]
 g_bwc.cyan = ['6cbfa3', 51]
 g_bwc.darkcyan = ['66cdaa', 51]
-g_bwc.magenta = ['ff00ff', 51]
 
 # The most basic of all our colors is a slightly tweaked version of the Molokai
 # Normal text.
@@ -82,6 +81,7 @@ g_bwc.darklime = ['8bbe00', 154]
 
 # Rose's dress in The Idiot's Lantern.
 g_bwc.dress = ['ff87af', 211]
+g_bwc.darkpink = ['ff5990', 211]
 
 # Another play on the brown from Clouds Midnight.  I love that color.
 g_bwc.toffee = ['b88853', 137]
@@ -117,7 +117,7 @@ if &termguicolors
                 \ Html_colour("darklime"),
                 \ Html_colour("darkdirtyblonde"),
                 \ Html_colour("tardis"),
-                \ Html_colour("magenta"),
+                \ Html_colour("darkpink"),
                 \ Html_colour("darkcyan"),
                 \ Html_colour("brightgravel"),
                 \ Html_colour("lightgravel"),
