@@ -78,7 +78,7 @@ g_bwc.orange = ['ffa724', 214]
 
 # A limier green from Getafe.
 g_bwc.lime = ['aeee00', 154]
-g_bwc.darklime = ['688e00', 154]
+g_bwc.darklime = ['8bbe00', 154]
 
 # Rose's dress in The Idiot's Lantern.
 g_bwc.dress = ['ff87af', 211]
