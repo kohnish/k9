@@ -24,6 +24,7 @@ g_bwc.darkblue = ['005fd7', 26]
 g_bwc.yellow = ['af8700', 136]
 g_bwc.cyan = ['6cbfa3', 51]
 g_bwc.darkcyan = ['66cdaa', 51]
+g_bwc.purple = ['943487', 5]
 
 # The most basic of all our colors is a slightly tweaked version of the Molokai
 # Normal text.
@@ -350,7 +351,8 @@ hi SpellLocal guisp=orange gui=undercurl guifg=NONE guibg=NONE ctermfg=NONE cter
     HL('CtrlPNoEntries', 'snow', 'taffy', 'bold')
 
    
-    HL('CtrlPMatch', 'orange', 'bg', 'none')
+    #HL('CtrlPMatch', 'orange', 'bg', 'none')
+    HL('CtrlPMatch', 'snow', 'purple', 'bold')
 
    
     HL('CtrlPLinePre', 'deepgravel', 'bg', 'none')
