@@ -36,7 +36,8 @@ g_bwc.coal = ['000000', 16]
 
 # All of the Gravel colors are based on a brown from Clouds Midnight.
 g_bwc.brightgravel   = ['d9cec3', 252]
-g_bwc.lightgravel    = ['998f84', 245]
+#g_bwc.lightgravel    = ['998f84', 245]
+g_bwc.lightgravel    = ['6b645c', 245]
 #g_bwc.gravel         = ['857f78', 243]
 g_bwc.gravel         = ['9e9e9e', 247]
 g_bwc.mediumgravel   = ['666462', 241]
