@@ -72,6 +72,9 @@ g_bwc.saltwatertaffy = ['8cffba', 121]
 # * The cursor
 # * A REPL prompt
 g_bwc.tardis = ['0a9dff', 39]
+g_bwc.darktardis = ['0071bd', 39]
+#g_bwc.tardis = ['0071bd', 39]
+#g_bwc.darktardis = ['26a8ff', 39]
 g_bwc.lighttardis = ['26a8ff', 39]
 
 # This one's from Mustang, not Florida!
@@ -205,8 +208,10 @@ HL('IncSearch', 'coal', 'tardis',    'bold')
 
 HL('Underlined', 'fg', '', 'underline')
 
+#HL('StatusLine',   'coal', 'blackgravel',     'bold')
+#HL('StatusLineNC', 'snow', 'deepgravel', 'bold')
 HL('StatusLine',   'coal', 'tardis',     'bold')
-HL('StatusLineNC', 'snow', 'deepgravel', 'bold')
+HL('StatusLineNC', 'gravel', 'deepgravel', 'bold')
 HL('StatusLineTerm',   'coal', 'tardis',     'bold')
 HL('StatusLineTermNC', 'snow', 'deepgravel', 'bold')
 
@@ -666,3 +671,4 @@ HL('VimBracket', 'dress', '', 'none')
 # }}}
 
 # }}}
+HL('User1', 'snow', 'darktardis', 'none')
