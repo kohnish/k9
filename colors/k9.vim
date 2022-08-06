@@ -182,7 +182,8 @@ HL('Normal', 'plain', 'blackgravel')
 
 HL('Folded', 'mediumgravel', 'bg', 'none')
 
-HL('VertSplit', 'lightgravel', 'bg', 'none')
+#HL('VertSplit', 'lightgravel', 'bg', 'none')
+HL('VertSplit', 'lightgravel', 'deepergravel', 'none')
 
 HL('CursorLine',   '', 'deepergravel', 'none')
 HL('CursorColumn', '', 'darkgravel')
