@@ -17,52 +17,52 @@ set background=dark
 var g_bwc = {}
 
 # Added normal colours without funky naming from badwolf
-g_bwc.red = ['d70000', 160]
-g_bwc.darkred = ['ac0000', 52]
-g_bwc.darkgreen = ['005f00', 22]
-g_bwc.darkblue = ['005fd7', 26]
-g_bwc.yellow = ['af8700', 136]
-g_bwc.cyan = ['6cbfa3', 51]
-g_bwc.darkcyan = ['66cdaa', 51]
-g_bwc.purple = ['943487', 176]
+g_bwc.red = ['#d70000', 160]
+g_bwc.darkred = ['#ac0000', 52]
+g_bwc.darkgreen = ['#005f00', 22]
+g_bwc.darkblue = ['#005fd7', 26]
+g_bwc.yellow = ['#af8700', 136]
+g_bwc.cyan = ['#6cbfa3', 51]
+g_bwc.darkcyan = ['#66cdaa', 51]
+g_bwc.purple = ['#943487', 176]
 
 # The most basic of all our colors is a slightly tweaked version of the Molokai
 # Normal text.
-g_bwc.plain = ['f8f6f2', 15]
+g_bwc.plain = ['#f8f6f2', 15]
 
 # Pure and simple.
-g_bwc.snow = ['ffffff', 15]
-g_bwc.coal = ['000000', 16]
+g_bwc.snow = ['#ffffff', 15]
+g_bwc.coal = ['#000000', 16]
 
 # All of the Gravel colors are based on a brown from Clouds Midnight.
-g_bwc.brightgravel   = ['d9cec3', 252]
-#g_bwc.lightgravel    = ['998f84', 245]
-g_bwc.lightgravel    = ['6b645c', 245]
-#g_bwc.gravel         = ['857f78', 243]
-g_bwc.gravel         = ['9e9e9e', 247]
-g_bwc.mediumgravel   = ['666462', 241]
-g_bwc.deepgravel     = ['45413b', 238]
-g_bwc.deepergravel   = ['35322d', 236]
-#g_bwc.darkgravel     = ['242321', 235]
-g_bwc.darkgravel     = ['121212', 235]
-g_bwc.blackgravel    = ['1c1b1a', 233]
-g_bwc.blackestgravel = ['141413', 232]
+g_bwc.brightgravel   = ['#d9cec3', 252]
+#g_bwc.lightgravel    = ['#998f84', 245]
+g_bwc.lightgravel    = ['#6b645c', 245]
+#g_bwc.gravel         = ['#857f78', 243]
+g_bwc.gravel         = ['#9e9e9e', 247]
+g_bwc.mediumgravel   = ['#666462', 241]
+g_bwc.deepgravel     = ['#45413b', 238]
+g_bwc.deepergravel   = ['#35322d', 236]
+#g_bwc.darkgravel     = ['#242321', 235]
+g_bwc.darkgravel     = ['#121212', 235]
+g_bwc.blackgravel    = ['#1c1b1a', 233]
+g_bwc.blackestgravel = ['#141413', 232]
 
 # A color sampled from a highlight in a photo of a glass of Dale's Pale Ale on
 # my desk.
-g_bwc.dalespale = ['fade3e', 221]
+g_bwc.dalespale = ['#fade3e', 221]
 
 # A beautiful tan from Tomorrow Night.
-g_bwc.dirtyblonde = ['f4cf86', 222]
-g_bwc.darkdirtyblonde = ['eeb340', 222]
+g_bwc.dirtyblonde = ['#f4cf86', 222]
+g_bwc.darkdirtyblonde = ['#eeb340', 222]
 
 # Delicious, chewy red from Made of Code for the poppiest highlights.
-#g_bwc.taffy = ['ff2c4b', 196]
-g_bwc.taffy = ['ff2c4b', 197]
-g_bwc.darktaffy = ['df0021', 197]
+#g_bwc.taffy = ['#ff2c4b', 196]
+g_bwc.taffy = ['#ff2c4b', 197]
+g_bwc.darktaffy = ['#df0021', 197]
 
 # Another chewy accent, but use sparingly!
-g_bwc.saltwatertaffy = ['8cffba', 121]
+g_bwc.saltwatertaffy = ['#8cffba', 121]
 
 # The star of the show comes straight from Made of Code.
 #
@@ -71,32 +71,32 @@ g_bwc.saltwatertaffy = ['8cffba', 121]
 #
 # * The cursor
 # * A REPL prompt
-g_bwc.tardis = ['0a9dff', 39]
-g_bwc.darktardis = ['0071bd', 39]
-#g_bwc.tardis = ['0071bd', 39]
-#g_bwc.darktardis = ['26a8ff', 39]
-g_bwc.lighttardis = ['26a8ff', 39]
+g_bwc.tardis = ['#0a9dff', 39]
+g_bwc.darktardis = ['#0071bd', 39]
+#g_bwc.tardis = ['#0071bd', 39]
+#g_bwc.darktardis = ['#26a8ff', 39]
+g_bwc.lighttardis = ['#26a8ff', 39]
 
 # This one's from Mustang, not Florida!
-g_bwc.orange = ['ffa724', 214]
+g_bwc.orange = ['#ffa724', 214]
 
 # A limier green from Getafe.
-g_bwc.lime = ['aeee00', 154]
-g_bwc.darklime = ['8bbe00', 154]
+g_bwc.lime = ['#aeee00', 154]
+g_bwc.darklime = ['#8bbe00', 154]
 
 # Rose's dress in The Idiot's Lantern.
-g_bwc.dress = ['ff87af', 211]
-g_bwc.darkpink = ['ff5990', 211]
+g_bwc.dress = ['#ff87af', 211]
+g_bwc.darkpink = ['#ff5990', 211]
 
 # Another play on the brown from Clouds Midnight.  I love that color.
-g_bwc.toffee = ['b88853', 137]
+g_bwc.toffee = ['#b88853', 137]
 
 # Also based on that Clouds Midnight brown.
-g_bwc.coffee    = ['c7915b', 173]
-g_bwc.darkroast = ['88633f', 95]
+g_bwc.coffee    = ['#c7915b', 173]
+g_bwc.darkroast = ['#88633f', 95]
 
 def Html_colour(name: string): string
-    return "#" .. g_bwc[name][0]
+    return g_bwc[name][0]
 enddef
 
 # 0    black
@@ -117,22 +117,23 @@ enddef
 # 15   white
 if &termguicolors
     g:terminal_ansi_colors = [
-                \ Html_colour("coal"),
-                \ Html_colour("taffy"),
-                \ Html_colour("darklime"),
-                \ Html_colour("darkdirtyblonde"),
-                \ Html_colour("tardis"),
-                \ Html_colour("darkpink"),
-                \ Html_colour("darkcyan"),
-                \ Html_colour("brightgravel"),
-                \ Html_colour("lightgravel"),
-                \ Html_colour("darktaffy"),
-                \ Html_colour("lime"),
-                \ Html_colour("dirtyblonde"),
-                \ Html_colour("lighttardis"),
-                \ Html_colour("dress"),
-                \ Html_colour("cyan"),
-                \ Html_colour("snow")]
+        g_bwc["coal"][0],
+        g_bwc["taffy"][0],
+        g_bwc["darklime"][0],
+        g_bwc["darkdirtyblonde"][0],
+        g_bwc["tardis"][0],
+        g_bwc["darkpink"][0],
+        g_bwc["darkcyan"][0],
+        g_bwc["brightgravel"][0],
+        g_bwc["lightgravel"][0],
+        g_bwc["darktaffy"][0],
+        g_bwc["lime"][0],
+        g_bwc["dirtyblonde"][0],
+        g_bwc["lighttardis"][0],
+        g_bwc["dress"][0],
+        g_bwc["cyan"][0],
+        g_bwc["snow"][0]
+    ]
 endif
 
 def HL(group: string, fg: string, ...vargs: list<string>): void
@@ -143,7 +144,7 @@ def HL(group: string, fg: string, ...vargs: list<string>): void
             histring = histring .. 'guifg=fg ctermfg=fg '
         else
             var c = get(g_bwc, fg)
-            histring = histring .. 'guifg=#' .. c[0] .. ' ctermfg=' .. c[1] .. ' '
+            histring = histring .. 'guifg=' .. c[0] .. ' ctermfg=' .. c[1] .. ' '
         endif
     endif
 
@@ -153,7 +154,7 @@ def HL(group: string, fg: string, ...vargs: list<string>): void
         else
             if vargs[0] != ''
                 var c = get(g_bwc, vargs[0])
-                histring = histring .. 'guibg=#' .. c[0] .. ' ctermbg=' .. c[1] .. ' '
+                histring = histring .. 'guibg=' .. c[0] .. ' ctermbg=' .. c[1] .. ' '
             endif
         endif
     endif
@@ -167,7 +168,7 @@ def HL(group: string, fg: string, ...vargs: list<string>): void
     if len(vargs) > 2
         if vargs[2] != ''
             var c = get(g_bwc, vargs[2])
-            histring = histring .. 'guisp=#' .. c[0] .. ' '
+            histring = histring .. 'guisp=' .. c[0] .. ' '
         endif
     endif
 
