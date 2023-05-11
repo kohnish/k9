@@ -95,6 +95,7 @@ if &background == "dark"
     g_bwc.menutext = g_bwc.coal
     g_bwc.pmenubg = g_bwc.lightgravel
     g_bwc.pmenuselbg = g_bwc.tardis
+    g_bwc.statuslinetext = g_bwc.coal
     g_bwc.statuslinenctext = g_bwc.gravel
     g_bwc.statuslinencbg = g_bwc.deepgravel
     g_bwc.quickfixlinecolor = g_bwc.snow
@@ -102,8 +103,8 @@ else
     g_gutter = 'snow'
     g_bwc.taffy = ['#800114', 197]
     g_bwc.darktaffy = ['#800114', 197]
-    g_bwc.tardis = ['#73bef0', 39]
-    g_bwc.darktardis = ['#73bef0', 39]
+    g_bwc.tardis = ['#005faf', 25]
+    g_bwc.darktardis = ['#005faf', 25]
     g_bwc.lighttardis = ['#73bef0', 39]
     g_bwc.plain = g_bwc.coal
     g_bwc.bgcolor = g_bwc.snow
@@ -116,11 +117,12 @@ else
     g_bwc.darklime = ['#003C00', 154]
     g_bwc.dress = ['#DD4A76', 211]
     g_bwc.darkpink = ['#DD4A76', 211]
-    g_bwc.menutext = g_bwc.coal
+    g_bwc.menutext = g_bwc.snow
     g_bwc.pmenubg = g_bwc.tardis
     g_bwc.pmenuselbg = g_bwc.tardis
-    g_bwc.statuslinenctext = g_bwc.coal
-    g_bwc.statuslinencbg = g_bwc.gravel
+    g_bwc.statuslinetext = g_bwc.snow
+    g_bwc.statuslinenctext = g_bwc.snow
+    g_bwc.statuslinencbg = g_bwc.snow
     g_bwc.quickfixlinecolor = g_bwc.darkgravel
 endif
 
@@ -240,7 +242,7 @@ HL('Underlined', 'fg', '', 'underline')
 
 #HL('StatusLine',   'coal', 'blackgravel',     'bold')
 #HL('StatusLineNC', 'snow', 'deepgravel', 'bold')
-HL('StatusLine',   'coal', 'tardis',     'bold')
+HL('StatusLine',   'statuslinetext', 'tardis',     'bold')
 HL('StatusLineNC', 'statuslinenctext', 'statuslinencbg', 'bold')
 HL('StatusLineTerm',   'coal', 'tardis',     'bold')
 HL('StatusLineTermNC', 'snow', 'deepgravel', 'bold')
