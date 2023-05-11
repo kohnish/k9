@@ -9,8 +9,6 @@ if exists("syntax_on")
     syntax reset
 endif
 
-set background=dark
-
 # }}}
 # Palette {{{
 
@@ -25,10 +23,6 @@ g_bwc.yellow = ['#af8700', 136]
 g_bwc.cyan = ['#6cbfa3', 51]
 g_bwc.darkcyan = ['#66cdaa', 51]
 g_bwc.purple = ['#943487', 176]
-
-# The most basic of all our colors is a slightly tweaked version of the Molokai
-# Normal text.
-g_bwc.plain = ['#f8f6f2', 15]
 
 # Pure and simple.
 g_bwc.snow = ['#ffffff', 15]
@@ -52,15 +46,6 @@ g_bwc.blackestgravel = ['#141413', 232]
 # my desk.
 g_bwc.dalespale = ['#fade3e', 221]
 
-# A beautiful tan from Tomorrow Night.
-g_bwc.dirtyblonde = ['#f4cf86', 222]
-g_bwc.darkdirtyblonde = ['#eeb340', 222]
-
-# Delicious, chewy red from Made of Code for the poppiest highlights.
-#g_bwc.taffy = ['#ff2c4b', 196]
-g_bwc.taffy = ['#ff2c4b', 197]
-g_bwc.darktaffy = ['#df0021', 197]
-
 # Another chewy accent, but use sparingly!
 g_bwc.saltwatertaffy = ['#8cffba', 121]
 
@@ -71,22 +56,8 @@ g_bwc.saltwatertaffy = ['#8cffba', 121]
 #
 # * The cursor
 # * A REPL prompt
-g_bwc.tardis = ['#0a9dff', 39]
-g_bwc.darktardis = ['#0071bd', 39]
 #g_bwc.tardis = ['#0071bd', 39]
 #g_bwc.darktardis = ['#26a8ff', 39]
-g_bwc.lighttardis = ['#26a8ff', 39]
-
-# This one's from Mustang, not Florida!
-g_bwc.orange = ['#ffa724', 214]
-
-# A limier green from Getafe.
-g_bwc.lime = ['#aeee00', 154]
-g_bwc.darklime = ['#8bbe00', 154]
-
-# Rose's dress in The Idiot's Lantern.
-g_bwc.dress = ['#ff87af', 211]
-g_bwc.darkpink = ['#ff5990', 211]
 
 # Another play on the brown from Clouds Midnight.  I love that color.
 g_bwc.toffee = ['#b88853', 137]
@@ -94,6 +65,62 @@ g_bwc.toffee = ['#b88853', 137]
 # Also based on that Clouds Midnight brown.
 g_bwc.coffee    = ['#c7915b', 173]
 g_bwc.darkroast = ['#88633f', 95]
+
+# The most basic of all our colors is a slightly tweaked version of the Molokai
+# Normal text.
+var g_gutter = 'blackgravel'
+if &background == "dark"
+    # Delicious, chewy red from Made of Code for the poppiest highlights.
+    #g_bwc.taffy = ['#ff2c4b', 196]
+    g_bwc.taffy = ['#ff2c4b', 197]
+    g_bwc.darktaffy = ['#df0021', 197]
+    # This one's from Mustang, not Florida!
+    g_bwc.orange = ['#ffa724', 214]
+    g_bwc.tardis = ['#0a9dff', 39]
+    g_bwc.darktardis = ['#0071bd', 39]
+    g_bwc.lighttardis = ['#26a8ff', 39]
+    g_bwc.plain = ['#f8f6f2', 15]
+    g_bwc.bgcolor = g_bwc.blackgravel
+    g_bwc.visualcolor = g_bwc.deepgravel
+    g_bwc.cursorlinecolor =  g_bwc.deepergravel
+    # A beautiful tan from Tomorrow Night.
+    g_bwc.dirtyblonde = ['#f4cf86', 222]
+    g_bwc.darkdirtyblonde = ['#eeb340', 222]
+    # A limier green from Getafe.
+    g_bwc.lime = ['#aeee00', 154]
+    g_bwc.darklime = ['#8bbe00', 154]
+    # Rose's dress in The Idiot's Lantern.
+    g_bwc.dress = ['#ff87af', 211]
+    g_bwc.darkpink = ['#ff5990', 211]
+    g_bwc.menutext = g_bwc.coal
+    g_bwc.pmenubg = g_bwc.lightgravel
+    g_bwc.pmenuselbg = g_bwc.tardis
+    g_bwc.statuslinenctext = g_bwc.gravel
+    g_bwc.statuslinencbg = g_bwc.deepgravel
+else
+    g_gutter = 'snow'
+    g_bwc.taffy = ['#800114', 197]
+    g_bwc.darktaffy = ['#800114', 197]
+    g_bwc.tardis = ['#73bef0', 39]
+    g_bwc.darktardis = ['#73bef0', 39]
+    g_bwc.lighttardis = ['#73bef0', 39]
+    g_bwc.plain = g_bwc.coal
+    g_bwc.bgcolor = g_bwc.snow
+    g_bwc.visualcolor = g_bwc.lighttardis
+    g_bwc.cursorlinecolor =  g_bwc.snow
+    g_bwc.dirtyblonde = ['#6D6200', 222]
+    g_bwc.darkdirtyblonde = ['#6D6200', 222]
+    g_bwc.orange = ['#CD5A00', 214]
+    g_bwc.lime = ['#003C00', 154]
+    g_bwc.darklime = ['#003C00', 154]
+    g_bwc.dress = ['#DD4A76', 211]
+    g_bwc.darkpink = ['#DD4A76', 211]
+    g_bwc.menutext = g_bwc.coal
+    g_bwc.pmenubg = g_bwc.tardis
+    g_bwc.pmenuselbg = g_bwc.tardis
+    g_bwc.statuslinenctext = g_bwc.coal
+    g_bwc.statuslinencbg = g_bwc.gravel
+endif
 
 def Html_colour(name: string): string
     return g_bwc[name][0]
@@ -175,18 +202,17 @@ def HL(group: string, fg: string, ...vargs: list<string>): void
     execute histring
 enddef
 
-var g_gutter = 'blackgravel'
 var g_tabline = 'blackgravel'
 
 
-HL('Normal', 'plain', 'blackgravel')
+HL('Normal', 'plain', 'bgcolor')
 
 HL('Folded', 'mediumgravel', 'bg', 'none')
 
 #HL('VertSplit', 'lightgravel', 'bg', 'none')
 HL('VertSplit', 'lightgravel', 'deepergravel', 'none')
 
-HL('CursorLine',   '', 'deepergravel', 'none')
+HL('CursorLine',   '', 'cursorlinecolor', 'none')
 HL('CursorColumn', '', 'darkgravel')
 HL('ColorColumn',  '', 'darkgravel')
 
@@ -202,8 +228,8 @@ HL('qfFileName', 'snow', 'bg', 'none')
 HL('NonText',    'deepgravel', 'bg')
 HL('SpecialKey', 'deepgravel', 'bg')
 
-HL('Visual',    '',  'deepgravel')
-HL('VisualNOS', '',  'deepgravel')
+HL('Visual',    '',  'visualcolor')
+HL('VisualNOS', '',  'visualcolor')
 
 HL('Search',    'coal', 'dalespale', 'bold')
 HL('IncSearch', 'coal', 'tardis',    'bold')
@@ -213,7 +239,7 @@ HL('Underlined', 'fg', '', 'underline')
 #HL('StatusLine',   'coal', 'blackgravel',     'bold')
 #HL('StatusLineNC', 'snow', 'deepgravel', 'bold')
 HL('StatusLine',   'coal', 'tardis',     'bold')
-HL('StatusLineNC', 'gravel', 'deepgravel', 'bold')
+HL('StatusLineNC', 'statuslinenctext', 'statuslinencbg', 'bold')
 HL('StatusLineTerm',   'coal', 'tardis',     'bold')
 HL('StatusLineTermNC', 'snow', 'deepgravel', 'bold')
 
@@ -315,8 +341,8 @@ HL('Ignore', 'gravel', '',      '')
 # }}}
 # Completion Menu {{{
 
-HL('Pmenu', 'coal', 'lightgravel')
-HL('PmenuSel', 'coal', 'tardis', 'bold')
+HL('Pmenu', 'menutext', 'pmenubg')
+HL('PmenuSel', 'menutext', 'pmenuselbg', 'bold')
 #HL('PmenuSel', 'plain', 'deepgravel', 'bold')
 HL('PmenuSbar', '', 'deepergravel')
 HL('PmenuThumb', 'brightgravel')
