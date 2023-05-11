@@ -122,7 +122,7 @@ else
     g_bwc.pmenuselbg = g_bwc.tardis
     g_bwc.statuslinetext = g_bwc.snow
     g_bwc.statuslinenctext = g_bwc.snow
-    g_bwc.statuslinencbg = g_bwc.snow
+    g_bwc.statuslinencbg = g_bwc.gravel
     g_bwc.quickfixlinecolor = g_bwc.darkgravel
 endif
 
