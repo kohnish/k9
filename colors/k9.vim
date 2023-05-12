@@ -69,6 +69,7 @@ g_bwc.darkroast = ['#88633f', 95]
 # The most basic of all our colors is a slightly tweaked version of the Molokai
 # Normal text.
 var g_gutter = 'blackgravel'
+var g_tabline = 'blackgravel'
 if &background == "dark"
     # Delicious, chewy red from Made of Code for the poppiest highlights.
     #g_bwc.taffy = ['#ff2c4b', 196]
@@ -99,8 +100,11 @@ if &background == "dark"
     g_bwc.statuslinenctext = g_bwc.gravel
     g_bwc.statuslinencbg = g_bwc.deepgravel
     g_bwc.quickfixlinecolor = g_bwc.snow
+    g_bwc.tablinetext = g_bwc.plain
+    g_bwc.tablinetextfill = g_bwc.plain
 else
     g_gutter = 'snow'
+    g_tabline = 'snow'
     g_bwc.taffy = ['#800114', 197]
     g_bwc.darktaffy = ['#800114', 197]
     g_bwc.tardis = ['#005faf', 25]
@@ -124,6 +128,8 @@ else
     g_bwc.statuslinenctext = g_bwc.snow
     g_bwc.statuslinencbg = g_bwc.gravel
     g_bwc.quickfixlinecolor = g_bwc.darkgravel
+    g_bwc.tablinetext = g_bwc.coal
+    g_bwc.tablinetextfill = g_bwc.snow
 endif
 
 def Html_colour(name: string): string
@@ -206,9 +212,6 @@ def HL(group: string, fg: string, ...vargs: list<string>): void
     execute histring
 enddef
 
-var g_tabline = 'blackgravel'
-
-
 HL('Normal', 'plain', 'bgcolor')
 
 HL('Folded', 'mediumgravel', 'bg', 'none')
@@ -220,8 +223,8 @@ HL('CursorLine',   '', 'cursorlinecolor', 'none')
 HL('CursorColumn', '', 'darkgravel')
 HL('ColorColumn',  '', 'darkgravel')
 
-HL('TabLine', 'plain', g_tabline, 'none')
-HL('TabLineFill', 'plain', g_tabline, 'none')
+HL('TabLine', 'tablinetext', g_tabline, 'none')
+HL('TabLineFill', 'tablinetextfill', g_tabline, 'none')
 HL('TabLineSel', 'coal', 'tardis', 'none')
 
 HL('MatchParen', 'dalespale', 'darkgravel', 'bold')
