@@ -94,6 +94,7 @@ if &background == "dark"
     g_bwc.dress = ['#ff87af', 211]
     g_bwc.darkpink = ['#ff5990', 211]
     g_bwc.menutext = g_bwc.coal
+    g_bwc.menuseltext = g_bwc.coal
     g_bwc.pmenubg = g_bwc.lightgravel
     g_bwc.pmenuselbg = g_bwc.tardis
     g_bwc.statuslinetext = g_bwc.coal
@@ -102,6 +103,7 @@ if &background == "dark"
     g_bwc.quickfixlinecolor = g_bwc.snow
     g_bwc.tablinetext = g_bwc.plain
     g_bwc.tablinetextfill = g_bwc.plain
+    g_bwc.tablineseltext = g_bwc.coal
 else
     g_gutter = 'snow'
     g_tabline = 'snow'
@@ -110,10 +112,6 @@ else
     g_bwc.tardis = ['#005faf', 25]
     g_bwc.darktardis = ['#005faf', 25]
     g_bwc.lighttardis = ['#73bef0', 39]
-    g_bwc.plain = g_bwc.coal
-    g_bwc.bgcolor = g_bwc.snow
-    g_bwc.visualcolor = g_bwc.lighttardis
-    g_bwc.cursorlinecolor =  g_bwc.snow
     g_bwc.dirtyblonde = ['#6D6200', 222]
     g_bwc.darkdirtyblonde = ['#6D6200', 222]
     g_bwc.orange = ['#CD5A00', 214]
@@ -121,8 +119,14 @@ else
     g_bwc.darklime = ['#003C00', 154]
     g_bwc.dress = ['#DD4A76', 211]
     g_bwc.darkpink = ['#DD4A76', 211]
-    g_bwc.menutext = g_bwc.snow
-    g_bwc.pmenubg = g_bwc.tardis
+    g_bwc.tablineseltext = g_bwc.snow
+    g_bwc.plain = g_bwc.coal
+    g_bwc.bgcolor = g_bwc.snow
+    g_bwc.visualcolor = g_bwc.brightgravel
+    g_bwc.cursorlinecolor =  g_bwc.snow
+    g_bwc.menutext = g_bwc.coal
+    g_bwc.menuseltext = g_bwc.snow
+    g_bwc.pmenubg = g_bwc.brightgravel
     g_bwc.pmenuselbg = g_bwc.tardis
     g_bwc.statuslinetext = g_bwc.snow
     g_bwc.statuslinenctext = g_bwc.snow
@@ -225,7 +229,7 @@ HL('ColorColumn',  '', 'darkgravel')
 
 HL('TabLine', 'tablinetext', g_tabline, 'none')
 HL('TabLineFill', 'tablinetextfill', g_tabline, 'none')
-HL('TabLineSel', 'coal', 'tardis', 'none')
+HL('TabLineSel', 'tablineseltext', 'tardis', 'none')
 
 HL('MatchParen', 'dalespale', 'darkgravel', 'bold')
 HL('QuickFixLine', 'quickfixlinecolor', 'bg', 'none')
@@ -349,7 +353,7 @@ HL('Ignore', 'gravel', '',      '')
 # Completion Menu {{{
 
 HL('Pmenu', 'menutext', 'pmenubg')
-HL('PmenuSel', 'menutext', 'pmenuselbg', 'bold')
+HL('PmenuSel', 'menuseltext', 'pmenuselbg', 'bold')
 #HL('PmenuSel', 'plain', 'deepgravel', 'bold')
 HL('PmenuSbar', '', 'deepergravel')
 HL('PmenuThumb', 'brightgravel')
