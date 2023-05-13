@@ -105,6 +105,7 @@ if &background == "dark"
     g_bwc.tablinetextfill = g_bwc.plain
     g_bwc.tablineseltext = g_bwc.coal
     g_bwc.special_key_tab_color = g_bwc.deepgravel
+    g_bwc.todo_text_color = g_bwc.snow
 else
     g_gutter = 'snow'
     g_tabline = 'snow'
@@ -136,6 +137,7 @@ else
     g_bwc.tablinetext = g_bwc.coal
     g_bwc.tablinetextfill = g_bwc.snow
     g_bwc.special_key_tab_color = g_bwc.brightgravel
+    g_bwc.todo_text_color = g_bwc.lightgravel
 endif
 
 def Html_colour(name: string): string
@@ -297,8 +299,8 @@ HL('Special', 'plain')
 
 # Comments are slightly brighter than folds, to make 'headers' easier to see.
 HL('Comment',        'gravel')
-HL('Todo',           'snow', 'bg', 'bold')
-HL('SpecialComment', 'snow', 'bg', 'bold')
+HL('Todo',           'todo_text_color', 'bg', 'bold')
+HL('SpecialComment', 'todo_text_color', 'bg', 'bold')
 
 # Strings are a nice, pale straw color.  Nothing too fancy.
 HL('String', 'dirtyblonde')
