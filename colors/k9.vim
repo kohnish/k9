@@ -104,6 +104,7 @@ if &background == "dark"
     g_bwc.tablinetext = g_bwc.plain
     g_bwc.tablinetextfill = g_bwc.plain
     g_bwc.tablineseltext = g_bwc.coal
+    g_bwc.special_key_tab_color = g_bwc.deepgravel
 else
     g_gutter = 'snow'
     g_tabline = 'snow'
@@ -134,6 +135,7 @@ else
     g_bwc.quickfixlinecolor = g_bwc.darkgravel
     g_bwc.tablinetext = g_bwc.coal
     g_bwc.tablinetextfill = g_bwc.snow
+    g_bwc.special_key_tab_color = g_bwc.brightgravel
 endif
 
 def Html_colour(name: string): string
@@ -237,7 +239,7 @@ HL('qfLineNr', 'snow', 'bg', 'none')
 HL('qfFileName', 'snow', 'bg', 'none')
 
 HL('NonText',    'deepgravel', 'bg')
-HL('SpecialKey', 'deepgravel', 'bg')
+HL('SpecialKey', 'special_key_tab_color', 'bg')
 
 HL('Visual',    '',  'visualcolor')
 HL('VisualNOS', '',  'visualcolor')
