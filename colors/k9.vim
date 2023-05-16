@@ -106,6 +106,10 @@ if &background == "dark"
     g_bwc.tablineseltext = g_bwc.coal
     g_bwc.special_key_tab_color = g_bwc.deepgravel
     g_bwc.todo_text_color = g_bwc.snow
+    g_bwc.comment_text_color = g_bwc.gravel
+    g_bwc.java_doc_tags_text_color = g_bwc.snow
+    g_bwc.java_doc_param_text_color = g_bwc.dalespale
+    g_bwc.question_text_color = g_bwc.snow
 else
     g_gutter = 'snow'
     g_tabline = 'snow'
@@ -119,7 +123,7 @@ else
     g_bwc.orange = ['#CD5A00', 214]
     g_bwc.lime = ['#003C00', 154]
     g_bwc.darklime = ['#003C00', 154]
-    g_bwc.dress = ['#DD4A76', 211]
+    g_bwc.dress = ['#c6426a', 211]
     g_bwc.darkpink = ['#DD4A76', 211]
     g_bwc.tablineseltext = g_bwc.snow
     g_bwc.plain = g_bwc.coal
@@ -138,6 +142,10 @@ else
     g_bwc.tablinetextfill = g_bwc.snow
     g_bwc.special_key_tab_color = g_bwc.brightgravel
     g_bwc.todo_text_color = g_bwc.lightgravel
+    g_bwc.comment_text_color = g_bwc.lightgravel
+    g_bwc.java_doc_tags_text_color = g_bwc.lightgravel
+    g_bwc.java_doc_param_text_color = g_bwc.lightgravel
+    g_bwc.question_text_color = g_bwc.orange
 endif
 
 def Html_colour(name: string): string
@@ -267,7 +275,7 @@ HL('MoreMsg',    'dalespale',   '',   'bold')
 HL('ModeMsg',    'dirtyblonde', '',   'bold')
 #HL('Question',   'dirtyblonde', '',   'bold')
 #HL('WarningMsg', 'dress',       '',   'bold')
-HL('Question',   'snow', '',   'bold')
+HL('Question',   'question_text_color', '',   'bold')
 HL('WarningMsg', 'orange',       '',   'bold')
 HL('ErrorMsg',   'red',       'bg', 'underline')
 
@@ -298,7 +306,7 @@ HL('iCursor', 'coal', 'tardis', 'none')
 HL('Special', 'plain')
 
 # Comments are slightly brighter than folds, to make 'headers' easier to see.
-HL('Comment',        'gravel')
+HL('Comment',        'comment_text_color')
 HL('Todo',           'todo_text_color', 'bg', 'bold')
 HL('SpecialComment', 'todo_text_color', 'bg', 'bold')
 
@@ -576,8 +584,8 @@ HL('htmlLink', 'lightgravel', '', 'underline')
 HL('javaClassDecl', 'taffy', '', 'bold')
 HL('javaScopeDecl', 'taffy', '', 'bold')
 HL('javaCommentTitle', 'gravel', '')
-HL('javaDocTags', 'snow', '', 'none')
-HL('javaDocParam', 'dalespale', '', '')
+HL('javaDocTags', 'java_doc_tags_text_color', '', 'none')
+HL('javaDocParam', 'java_doc_param_text_color', '', '')
 
 # }}}
 # LaTeX {{{
