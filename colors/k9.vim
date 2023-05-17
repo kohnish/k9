@@ -23,11 +23,9 @@ g_bwc.yellow = ['#af8700', 136]
 g_bwc.cyan = ['#6cbfa3', 51]
 g_bwc.darkcyan = ['#66cdaa', 51]
 g_bwc.purple = ['#943487', 176]
-
 # Pure and simple.
 g_bwc.snow = ['#ffffff', 15]
 g_bwc.coal = ['#000000', 16]
-
 # All of the Gravel colors are based on a brown from Clouds Midnight.
 g_bwc.brightgravel   = ['#d9cec3', 252]
 #g_bwc.lightgravel    = ['#998f84', 245]
@@ -41,113 +39,95 @@ g_bwc.deepergravel   = ['#35322d', 236]
 g_bwc.darkgravel     = ['#121212', 235]
 g_bwc.blackgravel    = ['#1c1b1a', 233]
 g_bwc.blackestgravel = ['#141413', 232]
-
 # A color sampled from a highlight in a photo of a glass of Dale's Pale Ale on
 # my desk.
 g_bwc.dalespale = ['#fade3e', 221]
-
 # Another chewy accent, but use sparingly!
 g_bwc.saltwatertaffy = ['#8cffba', 121]
-
-# The star of the show comes straight from Made of Code.
-#
-# You should almost never use this.  It should be used for things that denote
-# 'where the user is', which basically consists of:
-#
-# * The cursor
-# * A REPL prompt
 #g_bwc.tardis = ['#0071bd', 39]
 #g_bwc.darktardis = ['#26a8ff', 39]
-
 # Another play on the brown from Clouds Midnight.  I love that color.
 g_bwc.toffee = ['#b88853', 137]
-
 # Also based on that Clouds Midnight brown.
 g_bwc.coffee    = ['#c7915b', 173]
 g_bwc.darkroast = ['#88633f', 95]
-
+# Delicious, chewy red from Made of Code for the poppiest highlights.
+#g_bwc.taffy = ['#ff2c4b', 196]
+g_bwc.taffy = ['#ff2c4b', 197]
+g_bwc.darktaffy = ['#df0021', 197]
+# This one's from Mustang, not Florida!
+g_bwc.orange = ['#ffa724', 214]
+g_bwc.tardis = ['#0a9dff', 39]
+g_bwc.darktardis = ['#0071bd', 39]
+g_bwc.lighttardis = ['#26a8ff', 39]
+g_bwc.normal_bg = g_bwc.blackgravel
+g_bwc.visual_bg = g_bwc.deepgravel
+g_bwc.cursor_line_bg =  g_bwc.deepergravel
+# A beautiful tan from Tomorrow Night.
+g_bwc.dirtyblonde = ['#f4cf86', 222]
+g_bwc.darkdirtyblonde = ['#eeb340', 222]
+# A limier green from Getafe.
+g_bwc.lime = ['#aeee00', 154]
+g_bwc.darklime = ['#8bbe00', 154]
+# Rose's dress in The Idiot's Lantern.
+g_bwc.dress = ['#ff87af', 211]
+g_bwc.darkpink = ['#ff5990', 211]
 # The most basic of all our colors is a slightly tweaked version of the Molokai
 # Normal text.
-var g_gutter = 'blackgravel'
-var g_tabline = 'blackgravel'
-if &background == "dark"
-    # Delicious, chewy red from Made of Code for the poppiest highlights.
-    #g_bwc.taffy = ['#ff2c4b', 196]
-    g_bwc.taffy = ['#ff2c4b', 197]
-    g_bwc.darktaffy = ['#df0021', 197]
-    # This one's from Mustang, not Florida!
-    g_bwc.orange = ['#ffa724', 214]
-    g_bwc.tardis = ['#0a9dff', 39]
-    g_bwc.darktardis = ['#0071bd', 39]
-    g_bwc.lighttardis = ['#26a8ff', 39]
-    g_bwc.plain = ['#f8f6f2', 15]
-    g_bwc.bgcolor = g_bwc.blackgravel
-    g_bwc.visualcolor = g_bwc.deepgravel
-    g_bwc.cursorlinecolor =  g_bwc.deepergravel
-    # A beautiful tan from Tomorrow Night.
-    g_bwc.dirtyblonde = ['#f4cf86', 222]
-    g_bwc.darkdirtyblonde = ['#eeb340', 222]
-    # A limier green from Getafe.
-    g_bwc.lime = ['#aeee00', 154]
-    g_bwc.darklime = ['#8bbe00', 154]
-    # Rose's dress in The Idiot's Lantern.
-    g_bwc.dress = ['#ff87af', 211]
-    g_bwc.darkpink = ['#ff5990', 211]
-    g_bwc.menutext = g_bwc.coal
-    g_bwc.menuseltext = g_bwc.coal
-    g_bwc.pmenubg = g_bwc.lightgravel
-    g_bwc.pmenuselbg = g_bwc.tardis
-    g_bwc.statuslinetext = g_bwc.coal
-    g_bwc.statuslinenctext = g_bwc.gravel
-    g_bwc.statuslinencbg = g_bwc.deepgravel
-    g_bwc.quickfixlinecolor = g_bwc.snow
-    g_bwc.tablinetext = g_bwc.plain
-    g_bwc.tablinetextfill = g_bwc.plain
-    g_bwc.tablineseltext = g_bwc.coal
-    g_bwc.special_key_tab_color = g_bwc.deepgravel
-    g_bwc.todo_text_color = g_bwc.snow
-    g_bwc.comment_text_color = g_bwc.gravel
-    g_bwc.java_doc_tags_text_color = g_bwc.snow
-    g_bwc.java_doc_param_text_color = g_bwc.dalespale
-    g_bwc.question_text_color = g_bwc.snow
-    g_bwc.vert_split_text = g_bwc.lightgravel
-    g_bwc.vert_split_bg  = g_bwc.deepergravel
-else
-    g_gutter = 'snow'
-    g_tabline = 'snow'
+g_bwc.plain = ['#f8f6f2', 15]
+
+g_bwc.sign_column_bg = g_bwc.blackgravel
+g_bwc.tab_line_bg = g_bwc.blackgravel
+g_bwc.menu_text = g_bwc.coal
+g_bwc.menu_sel_text = g_bwc.coal
+g_bwc.pmenu_bg = g_bwc.lightgravel
+g_bwc.pmenu_sel_bg = g_bwc.tardis
+g_bwc.status_line_text = g_bwc.coal
+g_bwc.status_line_nc_text = g_bwc.gravel
+g_bwc.status_line_nc_bg = g_bwc.deepgravel
+g_bwc.quick_fix_line_text = g_bwc.snow
+g_bwc.tab_line_text = g_bwc.plain
+g_bwc.tab_line_fill_text = g_bwc.plain
+g_bwc.tab_line_sel_text = g_bwc.coal
+g_bwc.special_key_text = g_bwc.deepgravel
+g_bwc.todo_text = g_bwc.snow
+g_bwc.comment_text = g_bwc.gravel
+g_bwc.java_doc_tags_text = g_bwc.snow
+g_bwc.java_doc_param_text = g_bwc.dalespale
+g_bwc.question_text = g_bwc.snow
+g_bwc.vert_split_text = g_bwc.lightgravel
+g_bwc.vert_split_bg  = g_bwc.deepergravel
+
+if &background != "dark"
+    g_bwc.sign_column_bg = g_bwc.snow
+    g_bwc.tab_line_bg = g_bwc.snow
     g_bwc.taffy = ['#800114', 197]
-    g_bwc.darktaffy = ['#800114', 197]
     g_bwc.tardis = ['#005faf', 25]
-    g_bwc.darktardis = ['#005faf', 25]
-    g_bwc.lighttardis = ['#73bef0', 39]
-    g_bwc.dirtyblonde = ['#6D6200', 222]
-    g_bwc.darkdirtyblonde = ['#6D6200', 222]
-    g_bwc.orange = ['#CD5A00', 214]
-    g_bwc.lime = ['#003C00', 154]
-    g_bwc.darklime = ['#003C00', 154]
+    g_bwc.dirtyblonde = ['#6d6200', 222]
+    g_bwc.orange = ['#cd5a00', 214]
+    g_bwc.lime = ['#003c00', 154]
     g_bwc.dress = ['#c6426a', 211]
-    g_bwc.darkpink = ['#DD4A76', 211]
-    g_bwc.tablineseltext = g_bwc.snow
+    g_bwc.tab_line_sel_text = g_bwc.snow
     g_bwc.plain = g_bwc.coal
-    g_bwc.bgcolor = g_bwc.snow
-    g_bwc.visualcolor = g_bwc.brightgravel
-    g_bwc.cursorlinecolor =  g_bwc.snow
-    g_bwc.menutext = g_bwc.coal
-    g_bwc.menuseltext = g_bwc.snow
-    g_bwc.pmenubg = g_bwc.brightgravel
-    g_bwc.pmenuselbg = g_bwc.tardis
-    g_bwc.statuslinetext = g_bwc.snow
-    g_bwc.statuslinenctext = g_bwc.snow
-    g_bwc.statuslinencbg = g_bwc.gravel
-    g_bwc.quickfixlinecolor = g_bwc.darkgravel
-    g_bwc.tablinetext = g_bwc.coal
-    g_bwc.tablinetextfill = g_bwc.snow
-    g_bwc.special_key_tab_color = g_bwc.brightgravel
-    g_bwc.todo_text_color = g_bwc.lightgravel
-    g_bwc.comment_text_color = g_bwc.lightgravel
-    g_bwc.java_doc_tags_text_color = g_bwc.lightgravel
-    g_bwc.java_doc_param_text_color = g_bwc.lightgravel
-    g_bwc.question_text_color = g_bwc.orange
+    g_bwc.normal_bg = g_bwc.snow
+    g_bwc.visual_bg = g_bwc.brightgravel
+    g_bwc.cursor_line_bg =  g_bwc.snow
+    g_bwc.menu_text = g_bwc.coal
+    g_bwc.menu_sel_text = g_bwc.snow
+    g_bwc.pmenu_bg = g_bwc.brightgravel
+    g_bwc.pmenu_sel_bg = g_bwc.tardis
+    g_bwc.status_line_text = g_bwc.snow
+    g_bwc.status_line_nc_text = g_bwc.snow
+    g_bwc.status_line_nc_bg = g_bwc.gravel
+    g_bwc.quick_fix_line_text = g_bwc.darkgravel
+    g_bwc.tab_line_text = g_bwc.coal
+    g_bwc.tab_line_fill_text = g_bwc.snow
+    g_bwc.special_key_text = g_bwc.brightgravel
+    g_bwc.todo_text = g_bwc.lightgravel
+    g_bwc.comment_text = g_bwc.lightgravel
+    g_bwc.java_doc_tags_text = g_bwc.lightgravel
+    g_bwc.java_doc_param_text = g_bwc.lightgravel
+    g_bwc.question_text = g_bwc.orange
     g_bwc.vert_split_text = g_bwc.tardis
     g_bwc.vert_split_bg  = g_bwc.brightgravel
 endif
@@ -232,31 +212,31 @@ def HL(group: string, fg: string, ...vargs: list<string>): void
     execute histring
 enddef
 
-HL('Normal', 'plain', 'bgcolor')
+HL('Normal', 'plain', 'normal_bg')
 
 HL('Folded', 'mediumgravel', 'bg', 'none')
 
 #HL('VertSplit', 'lightgravel', 'bg', 'none')
 HL('VertSplit', 'vert_split_text', 'vert_split_bg', 'none')
 
-HL('CursorLine',   '', 'cursorlinecolor', 'none')
+HL('CursorLine',   '', 'cursor_line_bg', 'none')
 HL('CursorColumn', '', 'darkgravel')
 HL('ColorColumn',  '', 'darkgravel')
 
-HL('TabLine', 'tablinetext', g_tabline, 'none')
-HL('TabLineFill', 'tablinetextfill', g_tabline, 'none')
-HL('TabLineSel', 'tablineseltext', 'tardis', 'none')
+HL('TabLine', 'tab_line_text', 'tab_line_bg', 'none')
+HL('TabLineFill', 'tab_line_fill_text', 'tab_line_bg', 'none')
+HL('TabLineSel', 'tab_line_sel_text', 'tardis', 'none')
 
 HL('MatchParen', 'dalespale', 'darkgravel', 'bold')
-HL('QuickFixLine', 'quickfixlinecolor', 'bg', 'none')
+HL('QuickFixLine', 'quick_fix_line_text', 'bg', 'none')
 HL('qfLineNr', 'snow', 'bg', 'none')
 HL('qfFileName', 'snow', 'bg', 'none')
 
 HL('NonText',    'deepgravel', 'bg')
-HL('SpecialKey', 'special_key_tab_color', 'bg')
+HL('SpecialKey', 'special_key_text', 'bg')
 
-HL('Visual',    '',  'visualcolor')
-HL('VisualNOS', '',  'visualcolor')
+HL('Visual',    '',  'visual_bg')
+HL('VisualNOS', '',  'visual_bg')
 
 HL('Search',    'coal', 'dalespale', 'bold')
 HL('IncSearch', 'coal', 'tardis',    'bold')
@@ -265,8 +245,8 @@ HL('Underlined', 'fg', '', 'underline')
 
 #HL('StatusLine',   'coal', 'blackgravel',     'bold')
 #HL('StatusLineNC', 'snow', 'deepgravel', 'bold')
-HL('StatusLine',   'statuslinetext', 'tardis',     'bold')
-HL('StatusLineNC', 'statuslinenctext', 'statuslinencbg', 'bold')
+HL('StatusLine',   'status_line_text', 'tardis',     'bold')
+HL('StatusLineNC', 'status_line_nc_text', 'status_line_nc_bg', 'bold')
 HL('StatusLineTerm',   'coal', 'tardis',     'bold')
 HL('StatusLineTermNC', 'snow', 'deepgravel', 'bold')
 
@@ -279,7 +259,7 @@ HL('MoreMsg',    'dalespale',   '',   'bold')
 HL('ModeMsg',    'dirtyblonde', '',   'bold')
 #HL('Question',   'dirtyblonde', '',   'bold')
 #HL('WarningMsg', 'dress',       '',   'bold')
-HL('Question',   'question_text_color', '',   'bold')
+HL('Question',   'question_text', '',   'bold')
 HL('WarningMsg', 'orange',       '',   'bold')
 HL('ErrorMsg',   'red',       'bg', 'underline')
 
@@ -292,9 +272,9 @@ HL('Tag', '', '', 'bold')
 # }}}
 # Gutter {{{
 
-HL('LineNr',     'mediumgravel', g_gutter)
-HL('SignColumn', '',             g_gutter)
-HL('FoldColumn', 'mediumgravel', g_gutter)
+HL('LineNr',     'mediumgravel', 'sign_column_bg')
+HL('SignColumn', '',             'sign_column_bg')
+HL('FoldColumn', 'mediumgravel', 'sign_column_bg')
 
 # }}}
 # Cursor {{{
@@ -310,9 +290,9 @@ HL('iCursor', 'coal', 'tardis', 'none')
 HL('Special', 'plain')
 
 # Comments are slightly brighter than folds, to make 'headers' easier to see.
-HL('Comment',        'comment_text_color')
-HL('Todo',           'todo_text_color', 'bg', 'bold')
-HL('SpecialComment', 'todo_text_color', 'bg', 'bold')
+HL('Comment',        'comment_text')
+HL('Todo',           'todo_text', 'bg', 'bold')
+HL('SpecialComment', 'todo_text', 'bg', 'bold')
 
 # Strings are a nice, pale straw color.  Nothing too fancy.
 HL('String', 'dirtyblonde')
@@ -368,8 +348,8 @@ HL('Ignore', 'gravel', '',      '')
 # }}}
 # Completion Menu {{{
 
-HL('Pmenu', 'menutext', 'pmenubg')
-HL('PmenuSel', 'menuseltext', 'pmenuselbg', 'bold')
+HL('Pmenu', 'menu_text', 'pmenu_bg')
+HL('PmenuSel', 'menu_sel_text', 'pmenu_sel_bg', 'bold')
 #HL('PmenuSel', 'plain', 'deepgravel', 'bold')
 HL('PmenuSbar', '', 'deepergravel')
 HL('PmenuThumb', 'brightgravel')
@@ -407,43 +387,34 @@ hi SpellLocal guisp=orange gui=undercurl guifg=NONE guibg=NONE ctermfg=NONE cter
 # Plugins {{{
 
 # CtrlP {{{
+HL('CtrlPNoEntries', 'snow', 'taffy', 'bold')
 
-   
-    HL('CtrlPNoEntries', 'snow', 'taffy', 'bold')
 
-   
-    #HL('CtrlPMatch', 'orange', 'bg', 'none')
-    HL('CtrlPMatch', 'snow', 'purple', 'bold')
+#HL('CtrlPMatch', 'orange', 'bg', 'none')
+HL('CtrlPMatch', 'snow', 'purple', 'bold')
 
-   
-    HL('CtrlPLinePre', 'deepgravel', 'bg', 'none')
 
-   
-    HL('CtrlPPrtBase', 'deepgravel', 'bg', 'none')
+HL('CtrlPLinePre', 'deepgravel', 'bg', 'none')
 
-   
-    HL('CtrlPPrtText', 'plain', 'bg', 'none')
 
-   
-    HL('CtrlPPrtCursor', 'coal', 'tardis', 'bold')
+HL('CtrlPPrtBase', 'deepgravel', 'bg', 'none')
 
-   
-    HL('CtrlPMode1', 'coal', 'tardis', 'bold')
 
-   
-    HL('CtrlPMode2', 'coal', 'tardis', 'bold')
+HL('CtrlPPrtText', 'plain', 'bg', 'none')
 
-   
-    HL('CtrlPStats', 'coal', 'tardis', 'bold')
 
-   
-   
-   
-   
-   
-   
+HL('CtrlPPrtCursor', 'coal', 'tardis', 'bold')
 
+
+HL('CtrlPMode1', 'coal', 'tardis', 'bold')
+
+
+HL('CtrlPMode2', 'coal', 'tardis', 'bold')
+
+
+HL('CtrlPStats', 'coal', 'tardis', 'bold')
 # }}}
+
 # EasyMotion {{{
 
 HL('EasyMotionTarget', 'tardis',     'bg', 'bold')
@@ -460,7 +431,6 @@ HL('InterestingWord3', 'coal', 'saltwatertaffy')
 HL('InterestingWord4', 'coal', 'toffee')
 HL('InterestingWord5', 'coal', 'dress')
 HL('InterestingWord6', 'coal', 'taffy')
-
 
 # }}}
 # Makegreen {{{
@@ -588,8 +558,8 @@ HL('htmlLink', 'lightgravel', '', 'underline')
 HL('javaClassDecl', 'taffy', '', 'bold')
 HL('javaScopeDecl', 'taffy', '', 'bold')
 HL('javaCommentTitle', 'gravel', '')
-HL('javaDocTags', 'java_doc_tags_text_color', '', 'none')
-HL('javaDocParam', 'java_doc_param_text_color', '', '')
+HL('javaDocTags', 'java_doc_tags_text', '', 'none')
+HL('javaDocParam', 'java_doc_param_text', '', '')
 
 # }}}
 # LaTeX {{{
