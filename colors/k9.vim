@@ -110,6 +110,8 @@ if &background == "dark"
     g_bwc.java_doc_tags_text_color = g_bwc.snow
     g_bwc.java_doc_param_text_color = g_bwc.dalespale
     g_bwc.question_text_color = g_bwc.snow
+    g_bwc.vert_split_text = g_bwc.lightgravel
+    g_bwc.vert_split_bg  = g_bwc.deepergravel
 else
     g_gutter = 'snow'
     g_tabline = 'snow'
@@ -146,6 +148,8 @@ else
     g_bwc.java_doc_tags_text_color = g_bwc.lightgravel
     g_bwc.java_doc_param_text_color = g_bwc.lightgravel
     g_bwc.question_text_color = g_bwc.orange
+    g_bwc.vert_split_text = g_bwc.tardis
+    g_bwc.vert_split_bg  = g_bwc.brightgravel
 endif
 
 def Html_colour(name: string): string
@@ -233,7 +237,7 @@ HL('Normal', 'plain', 'bgcolor')
 HL('Folded', 'mediumgravel', 'bg', 'none')
 
 #HL('VertSplit', 'lightgravel', 'bg', 'none')
-HL('VertSplit', 'lightgravel', 'deepergravel', 'none')
+HL('VertSplit', 'vert_split_text', 'vert_split_bg', 'none')
 
 HL('CursorLine',   '', 'cursorlinecolor', 'none')
 HL('CursorColumn', '', 'darkgravel')
