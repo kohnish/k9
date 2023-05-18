@@ -24,7 +24,7 @@ g_bwc.cyan = ['#6cbfa3', 51]
 g_bwc.darkcyan = ['#66cdaa', 51]
 g_bwc.purple = ['#943487', 176]
 # Pure and simple.
-g_bwc.snow = ['#ffffff', 15]
+g_bwc.snow = ['#ffffff', 231]
 g_bwc.coal = ['#000000', 16]
 # All of the Gravel colors are based on a brown from Clouds Midnight.
 g_bwc.brightgravel   = ['#d9cec3', 252]
@@ -97,16 +97,19 @@ g_bwc.java_doc_param_text = g_bwc.dalespale
 g_bwc.question_text = g_bwc.snow
 g_bwc.vert_split_text = g_bwc.lightgravel
 g_bwc.vert_split_bg  = g_bwc.deepergravel
+g_bwc.status_line_term_text = g_bwc.coal
 
 if &background != "dark"
     g_bwc.sign_column_bg = g_bwc.snow
     g_bwc.tab_line_bg = g_bwc.snow
-    g_bwc.taffy = ['#800114', 197]
+    g_bwc.lightgravel    = ['#6b645c', 242]
+    g_bwc.purple = ['#943487', 97]
+    g_bwc.taffy = ['#800114', 124]
     g_bwc.tardis = ['#005faf', 25]
-    g_bwc.dirtyblonde = ['#6d6200', 222]
+    g_bwc.dirtyblonde = ['#6d6200', 100]
     g_bwc.orange = ['#cd5a00', 214]
-    g_bwc.lime = ['#003c00', 154]
-    g_bwc.dress = ['#c6426a', 211]
+    g_bwc.lime = ['#003c00', 106]
+    g_bwc.dress = ['#c6426a', 132]
     g_bwc.tab_line_sel_text = g_bwc.snow
     g_bwc.plain = g_bwc.coal
     g_bwc.normal_bg = g_bwc.snow
@@ -130,6 +133,7 @@ if &background != "dark"
     g_bwc.question_text = g_bwc.orange
     g_bwc.vert_split_text = g_bwc.tardis
     g_bwc.vert_split_bg  = g_bwc.brightgravel
+    g_bwc.status_line_term_text = g_bwc.snow
 endif
 
 def Html_colour(name: string): string
@@ -247,7 +251,7 @@ HL('Underlined', 'fg', '', 'underline')
 #HL('StatusLineNC', 'snow', 'deepgravel', 'bold')
 HL('StatusLine',   'status_line_text', 'tardis',     'bold')
 HL('StatusLineNC', 'status_line_nc_text', 'status_line_nc_bg', 'bold')
-HL('StatusLineTerm',   'coal', 'tardis',     'bold')
+HL('StatusLineTerm',   'status_line_term_text', 'tardis',     'bold')
 HL('StatusLineTermNC', 'snow', 'deepgravel', 'bold')
 
 HL('Directory', 'dirtyblonde', '', 'bold')
