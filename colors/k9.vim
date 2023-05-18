@@ -15,6 +15,7 @@ endif
 var g_bwc = {}
 
 # Added normal colours without funky naming from badwolf
+g_bwc.beige = ['#ffffd7', 230]
 g_bwc.red = ['#d70000', 160]
 g_bwc.darkred = ['#ac0000', 52]
 g_bwc.darkgreen = ['#005f00', 22]
@@ -114,7 +115,7 @@ if &background != "dark"
     g_bwc.plain = g_bwc.coal
     g_bwc.normal_bg = g_bwc.snow
     g_bwc.visual_bg = g_bwc.brightgravel
-    g_bwc.cursor_line_bg =  g_bwc.snow
+    g_bwc.cursor_line_bg =  g_bwc.beige
     g_bwc.menu_text = g_bwc.coal
     g_bwc.menu_sel_text = g_bwc.snow
     g_bwc.pmenu_bg = g_bwc.brightgravel
