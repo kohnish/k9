@@ -61,9 +61,6 @@ g_bwc.orange = ['#ffa724', 214]
 g_bwc.tardis = ['#0a9dff', 39]
 g_bwc.darktardis = ['#0071bd', 39]
 g_bwc.lighttardis = ['#26a8ff', 39]
-g_bwc.normal_bg = g_bwc.blackgravel
-g_bwc.visual_bg = g_bwc.deepgravel
-g_bwc.cursor_line_bg =  g_bwc.deepergravel
 # A beautiful tan from Tomorrow Night.
 g_bwc.dirtyblonde = ['#f4cf86', 222]
 g_bwc.darkdirtyblonde = ['#eeb340', 222]
@@ -77,6 +74,9 @@ g_bwc.darkpink = ['#ff5990', 211]
 # Normal text.
 g_bwc.plain = ['#f8f6f2', 15]
 
+g_bwc.normal_bg = g_bwc.blackgravel
+g_bwc.visual_bg = g_bwc.deepgravel
+g_bwc.cursor_line_bg =  g_bwc.deepergravel
 g_bwc.sign_column_bg = g_bwc.blackgravel
 g_bwc.tab_line_bg = g_bwc.blackgravel
 g_bwc.menu_text = g_bwc.coal
@@ -99,21 +99,25 @@ g_bwc.question_text = g_bwc.snow
 g_bwc.vert_split_text = g_bwc.lightgravel
 g_bwc.vert_split_bg  = g_bwc.deepergravel
 g_bwc.status_line_term_text = g_bwc.coal
+g_bwc.ctrlp_match_text = g_bwc.snow
+g_bwc.ctrlp_match_bg = g_bwc.purple
 
 if &background != "dark"
-    g_bwc.sign_column_bg = g_bwc.snow
-    g_bwc.tab_line_bg = g_bwc.snow
     g_bwc.lightgravel    = ['#6b645c', 242]
-    g_bwc.purple = ['#943487', 97]
+    g_bwc.purple = ['#afafff', 147]
     g_bwc.taffy = ['#800114', 124]
     g_bwc.tardis = ['#005faf', 25]
     g_bwc.dirtyblonde = ['#6d6200', 100]
     g_bwc.orange = ['#cd5a00', 214]
     g_bwc.lime = ['#003c00', 106]
     g_bwc.dress = ['#c6426a', 132]
+    g_bwc.normal_bg = g_bwc.snow
+    g_bwc.sign_column_bg = g_bwc.snow
+    g_bwc.tab_line_bg = g_bwc.snow
+    g_bwc.ctrlp_match_text = g_bwc.coal
+    g_bwc.ctrlp_match_bg = g_bwc.purple
     g_bwc.tab_line_sel_text = g_bwc.snow
     g_bwc.plain = g_bwc.coal
-    g_bwc.normal_bg = g_bwc.snow
     g_bwc.visual_bg = g_bwc.brightgravel
     g_bwc.cursor_line_bg =  g_bwc.beige
     g_bwc.menu_text = g_bwc.coal
@@ -396,7 +400,7 @@ HL('CtrlPNoEntries', 'snow', 'taffy', 'bold')
 
 
 #HL('CtrlPMatch', 'orange', 'bg', 'none')
-HL('CtrlPMatch', 'snow', 'purple', 'bold')
+HL('CtrlPMatch', 'ctrlp_match_text', 'ctrlp_match_bg', 'bold')
 
 
 HL('CtrlPLinePre', 'deepgravel', 'bg', 'none')
