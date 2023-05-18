@@ -103,8 +103,8 @@ g_bwc.ctrlp_match_text = g_bwc.snow
 g_bwc.ctrlp_match_bg = g_bwc.purple
 
 if &background != "dark"
-    g_bwc.brightgravel   = ['#d9cec3', 255]
-    g_bwc.lightgravel    = ['#6b645c', 242]
+    g_bwc.brightgravel = ['#d9cec3', 255]
+    g_bwc.lightgravel = ['#6b645c', 242]
     g_bwc.purple = ['#afafff', 147]
     g_bwc.taffy = ['#800114', 124]
     g_bwc.tardis = ['#005faf', 25]
@@ -230,12 +230,12 @@ HL('Folded', 'mediumgravel', 'bg', 'none')
 HL('VertSplit', 'vert_split_text', 'vert_split_bg', 'none')
 
 HL('CursorLine',   '', 'cursor_line_bg', 'none')
-HL('CursorColumn', '', 'darkgravel')
-HL('ColorColumn',  '', 'darkgravel')
+HL('CursorColumn', '', 'cursor_line_bg')
+HL('ColorColumn',  '', 'cursor_line_bg')
 
-HL('TabLine', 'tab_line_text', 'tab_line_bg', 'none')
-HL('TabLineFill', 'tab_line_fill_text', 'tab_line_bg', 'none')
-HL('TabLineSel', 'tab_line_sel_text', 'tardis', 'none')
+HL('TabLine', 'tab_line_text', 'tab_line_bg', 'bold')
+HL('TabLineFill', 'tab_line_fill_text', 'tab_line_bg', 'bold')
+HL('TabLineSel', 'tab_line_sel_text', 'tardis', 'bold')
 
 HL('MatchParen', 'dalespale', 'darkgravel', 'bold')
 HL('QuickFixLine', 'quick_fix_line_text', 'bg', 'none')
