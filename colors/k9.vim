@@ -103,7 +103,6 @@ g_bwc.ctrlp_match_text = g_bwc.snow
 g_bwc.ctrlp_match_bg = g_bwc.purple
 
 if &background != "dark"
-    g_bwc.brightgravel = ['#d9cec3', 255]
     g_bwc.lightgravel = ['#6b645c', 242]
     g_bwc.purple = ['#afafff', 147]
     g_bwc.taffy = ['#800114', 124]
