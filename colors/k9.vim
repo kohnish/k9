@@ -101,6 +101,7 @@ g_bwc.vert_split_bg  = g_bwc.deepergravel
 g_bwc.status_line_term_text = g_bwc.coal
 g_bwc.ctrlp_match_text = g_bwc.snow
 g_bwc.ctrlp_match_bg = g_bwc.purple
+g_bwc.visual_text = g_bwc.snow
 
 if &background != "dark"
     g_bwc.lightgravel = ['#6b645c', 242]
@@ -118,6 +119,7 @@ if &background != "dark"
     g_bwc.ctrlp_match_bg = g_bwc.purple
     g_bwc.tab_line_sel_text = g_bwc.snow
     g_bwc.plain = g_bwc.coal
+    g_bwc.visual_text = g_bwc.coal
     g_bwc.visual_bg = g_bwc.beige
     g_bwc.cursor_line_bg =  g_bwc.beige
     g_bwc.menu_text = g_bwc.coal
@@ -244,8 +246,8 @@ HL('qfFileName', 'snow', 'bg', 'none')
 HL('NonText',    'deepgravel', 'bg')
 HL('SpecialKey', 'special_key_text', 'bg')
 
-HL('Visual',    '',  'visual_bg')
-HL('VisualNOS', '',  'visual_bg')
+HL('Visual',    'visual_text',  'visual_bg')
+HL('VisualNOS', 'visual_text',  'visual_bg')
 
 HL('Search',    'coal', 'dalespale', 'bold')
 HL('IncSearch', 'coal', 'tardis',    'bold')
