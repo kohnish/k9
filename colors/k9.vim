@@ -105,6 +105,7 @@ g_bwc.visual_text = g_bwc.snow
 
 if &background != "dark"
     g_bwc.lightgravel = ['#6b645c', 242]
+    g_bwc.deepgravel     = g_bwc.brightgravel
     g_bwc.purple = ['#afafff', 147]
     g_bwc.taffy = ['#800114', 124]
     g_bwc.tardis = ['#005faf', 25]
