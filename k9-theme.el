@@ -215,7 +215,7 @@
 
    ;; company
    `(company-echo-common ((t (:foreground ,plain))))
-   `(company-preview ((t (:background ,popup-bg :foreground ,gravel))))
+   ; `(company-preview ((t (:background ,popup-bg :foreground ,gravel))))
    `(company-preview-common ((t (:foreground , popup-fg))))
    `(company-preview-search ((t (:foreground ,tardis))))
    `(company-scrollbar-bg ((t (:background ,deepgravel))))
