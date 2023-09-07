@@ -1,3 +1,6 @@
+;;; k9 is a theme based on the following efforts
+;;; The licence is as-is. (GPLv3)
+
 ;;; badwolf-theme.el --- Bad Wolf color theme
 
 ;; Copyright (C) 2015  Bartłomiej Kruczyk
@@ -77,12 +80,12 @@
     `(font-lock-comment-delimiter-face ((t (:foreground ,lightgravel))))
     `(font-lock-constant-face ((t (:foreground ,toffee))))
     `(font-lock-doc-face ((t (:foreground ,dirtyblonde))))
-    `(font-lock-function-name-face ((t (:foreground ,orange))))
-    `(font-lock-variable-name-face ((t (:foreground ,orange))))
+    `(font-lock-function-name-face ((t (:foreground ,fg))))
+    `(font-lock-variable-name-face ((t (:foreground ,fg))))
     `(font-lock-keyword-face ((t (:foreground ,taffy ,@(when (not k9-keywords-nobold) `(:weight bold))))))
     `(font-lock-preprocessor-face ((t (:foreground ,lime))))
     `(font-lock-string-face ((t (:foreground ,dirtyblonde))))
-    `(font-lock-type-face ((t (:foreground ,dress))))
+    `(font-lock-type-face ((t (:foreground ,dirtyblonde))))
     `(font-lock-warning-face ((t (:foreground ,dress :weight bold))))
     `(shadow ((t (:foreground ,mediumgravel))))
     `(success ((t (:foreground ,lime))))
@@ -106,7 +109,7 @@
     `(escape-glyph ((t (:foreground ,tardis))))
     `(hl-line ((t (:inherit nil :background ,hl-line))))
     `(minibuffer-prompt ((t (:foreground ,plain))))
-    `(mode-line ((t (:box nil :foreground ,fg :background ,tardis))))
+    `(mode-line ((t (:box nil :foreground ,snow :background ,tardis))))
     ;; `(mode-line-inactive ((t (:box nil :foreground ,gravel :background "white"))))
     `(header-line ((t (:inherit mode-line))))
     `(link ((t (:foreground ,lightgravel :underline t))))
@@ -264,7 +267,7 @@
     `(magit-bisect-bad ((t (:foreground ,taffy))))
     `(magit-bisect-good ((t (:foreground ,lime))))
     `(magit-bisect-skip ((t (:foreground ,orange))))
-    `(magit-blame-heading ((t (:foreground ,lightgravel))))
+    `(magit-blame-heading ((t (:foreground ,magit-blame-user-colour))))
     `(magit-branch-local ((t (:foreground ,orange))))
     `(magit-branch-remote ((t (:foreground ,dress))))
     `(magit-diff-added ((t (:background ,bg :foreground ,lime))))
@@ -280,7 +283,7 @@
     `(magit-diffstat-added ((t (:foreground ,lime :background ,bg))))
     `(magit-diffstat-removed ((t (:foreground ,taffy :background ,bg))))
     `(magit-dimmed ((t (:inherit shadow))))
-    `(magit-header-line ((t (:foreground ,dirtyblonde))))
+    `(magit-header-line ((t (:foreground ,dirtyblonde :background, bg))))
     `(magit-log-author ((t (:foreground ,dirtyblonde))))
     `(magit-log-date ((t (:foreground ,magit-highlight))))
     `(magit-process-ng ((t (:inherit error))))
@@ -333,7 +336,7 @@
             (light-grey-text "#6b645c")
             (lighter-grey-text "#e5e3e1")
             (light-grey-selection-bg "#d9cec3")
-            (yellow "#6d6200")
+            (yellow "#4e4709")
             (dark-red "#800114")
             (tardis "#005faf")
             (orange "#cd5a00")
@@ -355,8 +358,10 @@
             (deepgravel light-grey-selection-bg)
             (popup-fg menu-selection-text)
             (magit-highlight coal)
-            (fg snow)
+            (fg coal)
+            (magit-blame-user-colour gravel)
             (white-space-text lighter-grey-text))
+      
       (k9-set-colour-scheme)))
   (t (let* (
              (beige "#ffffd7")
@@ -402,7 +407,8 @@
              (popup-fg menu-selection-text)
              (white-space-text light-grey-text)
              (magit-highlight brightgravel)
-             (fg coal)
+             (fg snow)
+             (magit-blame-user-colour lightgravel)
              (popup-fg menu-selection-text))
        (k9-set-colour-scheme))))
 
