@@ -89,8 +89,8 @@
     `(font-lock-warning-face ((t (:foreground ,dress :weight bold))))
     `(shadow ((t (:foreground ,mediumgravel))))
     `(success ((t (:foreground ,lime))))
-    `(error ((t (:foreground ,dress :weight bold))))
-    `(warning ((t (:foreground ,orange))))
+    `(error ((t (:foreground ,snow :background ,dark-red :weight bold))))
+    `(warning ((t (:foreground ,snow :background ,dark-orange :weight bold))))
 
                                         ; avy 
     `(avy-lead-face-0 ((t (:foreground ,coal :background , dalespale))))
@@ -340,6 +340,7 @@
             (dark-red "#800114")
             (tardis "#005faf")
             (orange "#cd5a00")
+            (dark-orange "#ff8c00")
             (lime "#5f8700")
             (pink "#c6426a")
             (bg snow)
@@ -388,6 +389,7 @@
              (dark-red "#ff2c4b")
              (tardis "#0a9dff")
              (orange "#ffa724")
+             (dark-orange "#ff8c00")
              (lime "#aeee00")
              (pink "#ff9eb8")
              (bg blackgravel)
