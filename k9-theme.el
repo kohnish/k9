@@ -267,7 +267,7 @@
     `(magit-bisect-bad ((t (:foreground ,taffy))))
     `(magit-bisect-good ((t (:foreground ,lime))))
     `(magit-bisect-skip ((t (:foreground ,orange))))
-    `(magit-blame-heading ((t (:foreground ,magit-blame-user-colour))))
+    `(magit-blame-heading ((t (:foreground ,tardis :background ,magit-blame-user-colour))))
     `(magit-branch-local ((t (:foreground ,orange))))
     `(magit-branch-remote ((t (:foreground ,dress))))
     `(magit-diff-added ((t (:background ,bg :foreground ,lime))))
@@ -360,7 +360,7 @@
             (popup-fg menu-selection-text)
             (magit-highlight coal)
             (fg coal)
-            (magit-blame-user-colour gravel)
+            (magit-blame-user-colour lighter-grey-text)
             (white-space-text lighter-grey-text))
       
       (k9-set-colour-scheme)))
