@@ -274,7 +274,7 @@
     `(magit-bisect-bad ((t (:foreground ,taffy))))
     `(magit-bisect-good ((t (:foreground ,lime))))
     `(magit-bisect-skip ((t (:foreground ,orange))))
-    `(magit-blame-heading ((t (:foreground ,magit-blame-user-colour))))
+    `(magit-blame-heading ((t (:foreground ,tardis, :background ,magit-blame-user-colour))))
     `(magit-branch-local ((t (:foreground ,orange))))
     `(magit-branch-remote ((t (:foreground ,dress))))
     `(magit-diff-added ((t (:background ,bg :foreground ,lime))))
