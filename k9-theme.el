@@ -367,7 +367,7 @@
             (popup-fg menu-selection-text)
             (magit-highlight coal)
             (fg coal)
-            (magit-blame-user-colour gravel)
+            (magit-blame-user-colour lighter-grey-text)
             (white-space-text lighter-grey-text))
       
       (k9-set-colour-scheme)))
@@ -417,7 +417,7 @@
              (white-space-text light-grey-text)
              (magit-highlight brightgravel)
              (fg snow)
-             (magit-blame-user-colour lightgravel)
+             (magit-blame-user-colour gravel)
              (popup-fg menu-selection-text))
        (k9-set-colour-scheme))))
 
