@@ -92,7 +92,14 @@
     `(error ((t (:foreground ,snow :background ,dark-red :weight bold))))
     `(warning ((t (:foreground ,snow :background ,dark-orange :weight bold))))
 
-                                        ; avy 
+    ;; `(tab-bar                    ((,class (:background ,lambda-bg :foreground ,lambda-meek :height 1.0 :box (:line-width -1 :color ,lambda-bg)))))
+    `(tab-bar-tab                ((t (:background ,tardis :foreground ,snow))))
+    ;; `(tab-bar-tab-inactive       ((,class (:background ,lambda-lowlight :foreground ,lambda-meek :height .95))))
+    ;; `(tab-bar-tab-ungrouped      ((,class (:background ,lambda-bg :foreground ,lambda-faint))))
+    ;; `(tab-bar-tab-group-current  ((,class (:background ,lambda-bg :foreground ,lambda-fg :underline t))))
+    ;; `(tab-bar-tab-group-inactive ((,class (:background ,lambda-bg :foreground ,lambda-faint))))
+
+    ;; avy 
     `(avy-lead-face-0 ((t (:foreground ,coal :background , dalespale))))
     `(avy-lead-face-1 ((t (:foreground ,coal :background , dalespale))))
     `(avy-lead-face-2 ((t (:foreground ,coal :background , dalespale))))
@@ -148,7 +155,7 @@
     `(lazy-highlight ((t (:foreground ,coal :background ,dalespale))))
 
     ;; show-paren-mode
-    `(show-paren-match ((t (:foreground ,dalespale :background ,bg :bold t))))
+    `(show-paren-match ((t (:foreground ,bg :background ,fg :bold t))))
     `(show-paren-mismatch ((t (:foreground ,coal :background ,taffy))))
 
     ;; anzu
@@ -267,7 +274,7 @@
     `(magit-bisect-bad ((t (:foreground ,taffy))))
     `(magit-bisect-good ((t (:foreground ,lime))))
     `(magit-bisect-skip ((t (:foreground ,orange))))
-    `(magit-blame-heading ((t (:foreground ,tardis :background ,magit-blame-user-colour))))
+    `(magit-blame-heading ((t (:foreground ,magit-blame-user-colour))))
     `(magit-branch-local ((t (:foreground ,orange))))
     `(magit-branch-remote ((t (:foreground ,dress))))
     `(magit-diff-added ((t (:background ,bg :foreground ,lime))))
@@ -360,7 +367,7 @@
             (popup-fg menu-selection-text)
             (magit-highlight coal)
             (fg coal)
-            (magit-blame-user-colour lighter-grey-text)
+            (magit-blame-user-colour gravel)
             (white-space-text lighter-grey-text))
       
       (k9-set-colour-scheme)))
@@ -410,7 +417,7 @@
              (white-space-text light-grey-text)
              (magit-highlight brightgravel)
              (fg snow)
-             (magit-blame-user-colour darkgravel)
+             (magit-blame-user-colour lightgravel)
              (popup-fg menu-selection-text))
        (k9-set-colour-scheme))))
 
