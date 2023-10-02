@@ -314,6 +314,11 @@
     `(magit-section-heading ((t (:foreground ,dirtyblonde))))
     `(magit-section-heading-selection ((t (:foreground ,dalespale))))
 
+    ;; `(diff-added ((t (:background ,bg :foreground ,lime))))
+    `(diff-changed ((t (:background ,yellow :foreground ,snow))))
+    ;; `(diff-refine-added ((t (:background ,tardis :foreground ,snow))))
+    ;; `(diff-removed ((t (:background ,bg :foreground ,taffy))))
+    
     ;; smart-mode-line
     `(sml/global ((t (:foreground ,plain))))
     `(sml/vc-edited ((t (:foreground ,dress))))
