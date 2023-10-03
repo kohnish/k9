@@ -314,10 +314,11 @@
     `(magit-section-heading ((t (:foreground ,dirtyblonde))))
     `(magit-section-heading-selection ((t (:foreground ,dalespale))))
 
-    ;; `(diff-added ((t (:background ,bg :foreground ,lime))))
-    `(diff-changed ((t (:background ,yellow :foreground ,snow))))
-    ;; `(diff-refine-added ((t (:background ,tardis :foreground ,snow))))
-    ;; `(diff-removed ((t (:background ,bg :foreground ,taffy))))
+    `(diff-added ((t (:background ,lime :foreground ,bg))))
+    `(diff-changed ((t (:background ,yellow :foreground ,bg))))
+    `(diff-removed ((t (:background ,taffy :foreground ,bg))))
+    `(diff-refine-added ((t (:background ,lime :foreground ,bg))))
+    `(diff-refine-changed ((t (:background ,taffy :foreground ,bg))))
     
     ;; smart-mode-line
     `(sml/global ((t (:foreground ,plain))))
