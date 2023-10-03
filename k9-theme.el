@@ -365,7 +365,7 @@
             (light-grey-text "#6b645c")
             (lighter-grey-text "#e5e3e1")
             (light-grey-selection-bg "#d9cec3")
-            (yellow "#4e4709")
+            (yellow "#af8700")
             (dark-red "#800114")
             (tardis "#005faf")
             (orange "#cd5a00")
