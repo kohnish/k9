@@ -439,7 +439,7 @@
              (white-space-text light-grey-text)
              (magit-highlight brightgravel)
              (fg snow)
-             (magit-blame-user-colour gravel)
+             (magit-blame-user-colour darkgravel)
              (popup-fg menu-selection-text))
        (k9-set-colour-scheme))))
 
