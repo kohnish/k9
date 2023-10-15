@@ -363,7 +363,7 @@
             (default-text-color "#000000")
             (light-grey-bg "#eeeeee")
             (light-grey-text "#6b645c")
-            (lighter-grey-text "#e5e3e1")
+            (lighter-grey-text "#b7b5b4")
             (light-grey-selection-bg "#d9cec3")
             (yellow "#af8700")
             (dark-red "#800114")
