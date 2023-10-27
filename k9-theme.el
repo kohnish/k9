@@ -249,7 +249,7 @@
     ;; org
     `(outline-1 ((t (:foreground ,orange :height 1.2))))
     `(outline-2 ((t (:foreground ,dirtyblonde))))
-    `(outline-3 ((t (:foreground ,brightgravel))))
+    `(outline-3 ((t (:foreground ,gravel))))
     `(outline-4 ((t (:foreground ,toffee))))
     `(outline-5 ((t (:foreground ,dress))))
 
