@@ -238,8 +238,8 @@
     `(ivy-highlight-face ((t (:foreground ,tardis :background ,bg))))
 
     `(swiper-match-face-1 ((t :foreground ,plain)))
-    `(swiper-match-face-2 ((t :foreground ,bg :background ,dalespale :bold t)))
-    `(swiper-match-face-3 ((t :foreground ,bg :background ,dress :bold t)))
+    `(swiper-match-face-2 ((t :foreground ,bg :background ,dress :bold t)))
+    `(swiper-match-face-3 ((t :foreground ,bg :background ,lime :bold t)))
     `(swiper-match-face-4 ((t :foreground ,bg :background ,tardis :bold t)))
 
     ;; eglot
