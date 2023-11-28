@@ -62,6 +62,11 @@
   :group 'k9)
 
 
+(defcustom k9-disable-highlight-indent nil
+  "Allow disabling highlight indent override configuration"
+  :type 'boolean
+  :group 'k9)
+
 (defun k9-set-colour-scheme()
   (custom-theme-set-variables
     'k9
