@@ -410,7 +410,7 @@
       (setf highlight-colour mediumgravel))
     ;; Colours with common variables // to be removed
     (k9-set-colour-scheme)
-    (when (package-installed-p 'highlight-indent-guides)
+    (when (and (not k9-disable-highlight-indent) (package-installed-p 'highlight-indent-guides))
       (require 'highlight-indent-guides)
       (setopt highlight-indent-guides-method 'bitmap)
       (setopt highlight-indent-guides-bitmap-function #'highlight-indent-guides--bitmap-line)
