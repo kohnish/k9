@@ -260,6 +260,7 @@
 
     `(org-block ((t (:foreground ,fg))))
     `(org-code ((t (:foreground ,fg))))
+    `(org-link ((t (:foreground ,fg))))
     `(org-done ((t (:foreground ,pink :weight bold))))
     `(org-todo ((t (:foreground ,dalespale :weight bold))))
     `(org-date ((t (:foreground ,tardis :underline t))))
