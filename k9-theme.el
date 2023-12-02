@@ -258,12 +258,15 @@
     `(outline-4 ((t (:foreground ,toffee))))
     `(outline-5 ((t (:foreground ,pink))))
 
+    `(org-block ((t (:foreground ,fg))))
+    `(org-code ((t (:foreground ,fg))))
     `(org-done ((t (:foreground ,pink :weight bold))))
     `(org-todo ((t (:foreground ,dalespale :weight bold))))
     `(org-date ((t (:foreground ,tardis :underline t))))
     `(org-special-keyword ((t (:foreground ,dark-red :weight bold))))
     `(org-document-info ((t (:foreground ,light-grey-bg))))
     `(org-document-title ((t (:foreground ,default-text-color :family "sans" :height 1.8 :weight bold))))
+
 
     ;; erc
     `(erc-default-face ((t (:inherit default))))
