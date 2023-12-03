@@ -254,20 +254,20 @@
     ;; org
     `(outline-1 ((t (:foreground ,orange :height 1.2))))
     `(outline-2 ((t (:foreground ,yellow))))
-    `(outline-3 ((t (:foreground ,gravel))))
+    `(outline-3 ((t (:foreground ,fg))))
     `(outline-4 ((t (:foreground ,toffee))))
     `(outline-5 ((t (:foreground ,pink))))
 
     `(org-block ((t (:foreground ,fg))))
     `(org-code ((t (:foreground ,fg))))
-    `(org-link ((t (:foreground ,fg))))
     `(org-done ((t (:foreground ,pink :weight bold))))
     `(org-todo ((t (:foreground ,dalespale :weight bold))))
-    `(org-date ((t (:foreground ,tardis :underline t))))
+    `(org-date ((t (:foreground ,fg :underline t))))
+    `(org-table ((t (:foreground ,fg))))
+    `(org-link ((t (:foreground ,fg))))
     `(org-special-keyword ((t (:foreground ,dark-red :weight bold))))
     `(org-document-info ((t (:foreground ,light-grey-bg))))
     `(org-document-title ((t (:foreground ,default-text-color :family "sans" :height 1.8 :weight bold))))
-
 
     ;; erc
     `(erc-default-face ((t (:inherit default))))
@@ -278,7 +278,7 @@
     `(erc-current-nick-face ((t (:inherit erc-my-nick-face))))
     `(erc-direct-msg-face ((t (:foreground ,snow))))
     `(erc-input-face ((t (:foreground ,pink))))
-    `(erc-prompt-face ((t (:foreground ,tardis))))
+    `(erc-prompt-face ((t (:foreground ,fg))))
     `(erc-button ((t (:inherit link))))
     `(erc-timestamp-face ((t (:foreground ,lime))))
 
@@ -379,7 +379,7 @@
     (light-grey-text "#6b645c")
     (lighter-grey-text "#b7b5b4")
     (light-grey-selection-bg "#d9cec3")
-    (yellow "#af8700")
+    (yellow "#755a00")
     (dark-red "#800114")
     (tardis "#005faf")
     (orange "#cd5a00")
