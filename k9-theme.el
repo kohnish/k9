@@ -133,7 +133,9 @@
     `(fringe ((t (:background ,bg))))
     `(linum ((t (:foreground ,mediumgravel :background ,bg))))
     `(vertical-border ((t (:foreground ,gravel))))
-    `(highlight ((t (:foreground ,coal :background ,dalespale))))
+    `(highlight ((t (:foreground ,snow :background ,tardis))))
+    `(completions-common-part ((t (:foreground ,blackgravel :background ,dalespale))))
+
     `(escape-glyph ((t (:foreground ,tardis))))
     `(hl-line ((t (:inherit nil :background ,hl-line))))
     `(minibuffer-prompt ((t (:foreground ,default-text-color))))
