@@ -204,7 +204,10 @@
     `(eshell-prompt ((t (:foreground ,tardis))))
 
     ;; which-function-mode
-    `(which-func ((t :inherit font-lock-function-name-face)))
+    `(which-func ((t (:foreground ,snow))))
+
+    ;; eglot-mode
+    `(eglot-mode-line ((t (:foreground ,snow))))
 
     ;; company
     `(company-echo-common ((t (:foreground ,default-text-color))))
