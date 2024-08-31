@@ -424,14 +424,22 @@
       (setf highlight-colour mediumgravel))
     ;; Colours with common variables // to be removed
     (k9-set-colour-scheme)
-    (when (and (not k9-disable-highlight-indent) (package-installed-p 'highlight-indent-guides))
-      (require 'highlight-indent-guides)
-      (setopt highlight-indent-guides-method 'bitmap)
-      (setopt highlight-indent-guides-bitmap-function #'highlight-indent-guides--bitmap-line)
-      (setopt highlight-indent-guides-auto-enabled nil)
-      (set-face-background 'highlight-indent-guides-odd-face highlight-colour)
-      (set-face-background 'highlight-indent-guides-even-face highlight-colour)
-      (set-face-foreground 'highlight-indent-guides-character-face highlight-colour))))
+    (unless k9-disable-highlight-indent
+      (when (package-installed-p 'highlight-indent-guides)
+        (require 'highlight-indent-guides)
+        (setopt highlight-indent-guides-method 'bitmap)
+        (setopt highlight-indent-guides-bitmap-function #'highlight-indent-guides--bitmap-line)
+        (setopt highlight-indent-guides-auto-enabled nil)
+        (set-face-background 'highlight-indent-guides-odd-face highlight-colour)
+        (set-face-background 'highlight-indent-guides-even-face highlight-colour)
+        (set-face-foreground 'highlight-indent-guides-character-face highlight-colour))
+      (when (package-installed-p 'indent-bars)
+        (setopt indent-bars-prefer-character t)
+        (setq-default indent-bars-no-stipple-char 166)
+        (setopt indent-bars-color (list highlight-colour))
+        (setopt indent-bars-color-by-depth nil)
+        (setopt indent-bars-highlight-current-depth nil)
+        (setopt indent-bars-display-on-blank-lines nil)))))
 
 ;;;###autoload
 (when load-file-name
