@@ -398,7 +398,8 @@
     (magit-highlight coal)
     (fg coal)
     (magit-blame-user-colour lighter-grey-text)
-    (highlight-colour "#eeeeee"))
+    (indent-line-colour lighter-grey-text)
+    (highlight-colour light-grey-bg))
   (progn
     (when k9-is-dark-mode
       (setf purple "#943487")
@@ -421,6 +422,7 @@
       (setf magit-highlight light-grey-bg)
       (setf fg snow)
       (setf magit-blame-user-colour darkgravel)
+      (setf indent-line-colour mediumgravel)
       (setf highlight-colour mediumgravel))
     ;; Colours with common variables // to be removed
     (k9-set-colour-scheme)
@@ -436,7 +438,7 @@
       (when (package-installed-p 'indent-bars)
         (setopt indent-bars-prefer-character t)
         (setq-default indent-bars-no-stipple-char 166)
-        (setopt indent-bars-color (list highlight-colour))
+        (setopt indent-bars-color (list indent-line-colour))
         (setopt indent-bars-color-by-depth nil)
         (setopt indent-bars-highlight-current-depth nil)
         (setopt indent-bars-display-on-blank-lines nil)))))
