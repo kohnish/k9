@@ -111,6 +111,7 @@
     `(shadow ((t (:foreground ,mediumgravel))))
     `(success ((t (:foreground ,lime))))
     `(error ((t (:foreground ,snow :background ,dark-red :weight bold))))
+    `(dape-repl-error-face ((t (:foreground ,snow :background ,dark-red :weight bold))))
     `(warning ((t (:foreground ,snow :background ,dark-orange :weight bold))))
 
     ;; `(tab-bar                    ((,class (:background ,lambda-bg :foreground ,lambda-meek :height 1.0 :box (:line-width -1 :color ,lambda-bg)))))
@@ -247,6 +248,7 @@
     `(ivy-remote ((t :foreground ,tardis)))
     `(ivy-highlight-face ((t (:foreground ,tardis :background ,bg))))
 
+    `(match ((t (:foreground ,tardis :background ,yellow))))
     `(swiper-match-face-1 ((t :foreground ,default-text-color)))
     `(swiper-match-face-2 ((t :foreground ,bg :background ,pink :bold t)))
     `(swiper-match-face-3 ((t :foreground ,bg :background ,lime :bold t)))
