@@ -240,6 +240,7 @@
     ;; ivy
     `(ivy-confirm-face ((t :foreground ,lime)))
     `(ivy-current-match ((t (:foreground , menu-selection-text :background ,tardis))))
+    `(ivy-minibuffer-match-highlight ((t (:foreground ,dark-orange :background ,bg))))
     `(ivy-match-required-face ((t :foreground ,dark-red)))
     `(ivy-minibuffer-match-face-1 ((t :inherit nil)))
     `(ivy-minibuffer-match-face-2 ((t :inherit nil)))
