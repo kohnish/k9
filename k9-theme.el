@@ -249,7 +249,7 @@
     `(ivy-remote ((t :foreground ,tardis)))
     `(ivy-highlight-face ((t (:foreground ,tardis :background ,bg))))
 
-    `(match ((t (:foreground ,tardis :background ,yellow))))
+    `(match ((t (:foreground ,bg :background ,yellow))))
     `(swiper-match-face-1 ((t :foreground ,default-text-color)))
     `(swiper-match-face-2 ((t :foreground ,bg :background ,pink :bold t)))
     `(swiper-match-face-3 ((t :foreground ,bg :background ,lime :bold t)))
