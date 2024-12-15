@@ -257,7 +257,14 @@
     `(swiper-match-face-4 ((t :foreground ,bg :background ,tardis :bold t)))
 
     ;; helm
-    `(helm-source-header ((t :foreground ,bg :background ,bg)))
+    `(helm-source-header ((t :foreground ,bg :background ,bg :height 0.1)))
+    `(helm-selection ((t :foreground ,snow :background ,tardis)))
+    `(helm-ff-file-extension ((t :foreground ,fg)))
+    `(helm-buffer-size ((t :foreground ,fg)))
+    `(helm-buffer-process ((t :foreground ,fg)))
+    `(helm-grep-file ((t :foreground ,fg)))
+    `(helm-match ((t :inherit isearch)))
+    `(helm-grep-match ((t :inherit isearch)))
 
     ;; eglot
     `(eglot-highlight-symbol-face ((t :foreground ,default-text-color :background ,purple :bold t)))
