@@ -256,6 +256,9 @@
     `(swiper-match-face-3 ((t :foreground ,bg :background ,lime :bold t)))
     `(swiper-match-face-4 ((t :foreground ,bg :background ,tardis :bold t)))
 
+    ;; helm
+    `(helm-source-header ((t :foreground ,bg :background ,bg)))
+
     ;; eglot
     `(eglot-highlight-symbol-face ((t :foreground ,default-text-color :background ,purple :bold t)))
     `(eglot-inlay-hint-face ((t :foreground ,hint-text :background ,hint-bg :bold t)))
