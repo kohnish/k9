@@ -175,7 +175,7 @@
     `(ruler-mode-pad ((t (:inherit ruler-mode-default))))
 
     ;; search
-    `(isearch ((t (:foreground ,coal :background ,pink :bold t))))
+    `(isearch ((t (:foreground ,bg :background ,pink :bold t))))
     `(isearch-fail ((t (:foreground ,dark-red :background ,bg))))
     `(lazy-highlight ((t (:foreground ,coal :background ,dalespale))))
 
