@@ -264,7 +264,8 @@
     `(helm-buffer-process ((t :foreground ,fg)))
     `(helm-grep-file ((t :foreground ,fg)))
     `(helm-match ((t :inherit isearch)))
-    `(helm-grep-match ((t :inherit isearch)))
+    ;; for wgrep shouldn't be save as isearch
+    ;; `(helm-grep-match ((t :inherit isearch)))
 
     ;; eglot
     `(eglot-highlight-symbol-face ((t :foreground ,default-text-color :background ,purple :bold t)))
