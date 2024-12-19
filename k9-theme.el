@@ -259,13 +259,14 @@
     ;; helm
     `(helm-source-header ((t :foreground ,bg :background ,bg :height 0.1)))
     `(helm-selection ((t :foreground ,snow :background ,tardis)))
-    `(helm-ff-file-extension ((t :foreground ,fg)))
+    `(helm-ff-file-extension ((t :inherit helm-ff-file)))
     `(helm-buffer-size ((t :foreground ,fg)))
     `(helm-buffer-process ((t :foreground ,fg)))
     `(helm-grep-file ((t :foreground ,fg)))
     `(helm-match ((t :inherit isearch)))
     ;; for wgrep shouldn't be save as isearch
     ;; `(helm-grep-match ((t :inherit isearch)))
+    `(helm-buffer-saved-out ((t :background ,dalespale)))
 
     ;; eglot
     `(eglot-highlight-symbol-face ((t :foreground ,default-text-color :background ,purple :bold t)))
@@ -342,6 +343,8 @@
     `(magit-process-ok ((t (:foreground ,lime))))
     `(magit-section-heading ((t (:foreground ,yellow))))
     `(magit-section-heading-selection ((t (:foreground ,dalespale))))
+    `(magit-diff-revision-summary ((t (:foreground ,snow :background,darkroast :bold t))))
+    `(magit-diff-revision-summary-highlight ((t (:foreground ,snow :background,darkroast :bold t))))
 
     `(diff-added ((t (:background ,lime :foreground ,bg))))
     `(diff-changed ((t (:background ,yellow :foreground ,bg))))
