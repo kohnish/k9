@@ -1,0 +1,12 @@
+K9
+========
+Modified version of vim colorscheme badwolf rewritten in vim9script.
+Also inspired by jellybeans for clear diff colours for vimdiff and vim signify.
+Pmenu is also modified for LSP.
+
+vimrc to make html colour work on tmux (tmux-256color or screen-256color)
+```
+set termguicolors
+&t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+&t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+```
