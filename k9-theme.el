@@ -426,7 +426,7 @@
       (setf light-grey-bg "#d9cec3")
       (setf light-grey-text "#998f84")
       (setf light-grey-selection-bg "#45413b")
-      (setf lighter-grey-text "#e5e3e1")
+      (setf lighter-grey-text "#606060")
       (setf yellow "#f4cf86")
       (setf dark-red "#ff2c4b")
       (setf tardis "#0a9dff")
