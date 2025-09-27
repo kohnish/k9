@@ -360,6 +360,11 @@
     `(sml/modified ((t (:foreground ,dark-red :bold t))))
     `(sml/position-percentage ((t (:foreground ,orange))))
 
+    ;; coverage
+    `(fringe-blue-face ((t (:foreground ,tardis))))
+    `(fringe-red-face ((t (:foreground ,dark-red))))
+    `(fringe-yellow-face ((t (:foreground ,yellow))))
+
     ;; clojure
     `(clojure-keyword-face ((t (:foreground ,orange))))
     `(clojure-interop-method-face ((t (:foreground ,default-text-color))))
@@ -443,7 +448,11 @@
       (setf magit-blame-user-colour darkgravel)
       (setf indent-line-colour mediumgravel)
       (setf highlight-colour mediumgravel))
-    ;; Colours with common variables // to be removed
+
+    (defface fringe-blue-face '((t (:foreground "blue"))) "")
+    (defface fringe-red-face '((t (:foreground "red"))) "")
+    (defface fringe-yellow-face '((t (:foreground "yellow"))) "")
+
     (k9-set-colour-scheme)
     (unless k9-disable-highlight-indent
       (when (package-installed-p 'highlight-indent-guides)
