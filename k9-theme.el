@@ -449,7 +449,6 @@
       (setf indent-line-colour mediumgravel)
       (setf highlight-colour mediumgravel))
 
-    (define-fringe-bitmap 'coverage-bitmap [224] nil nil '(center repeated))
     (defface fringe-blue-face '((t (:foreground "blue"))) "")
     (defface fringe-red-face '((t (:foreground "red"))) "")
     (defface fringe-yellow-face '((t (:foreground "yellow"))) "")
