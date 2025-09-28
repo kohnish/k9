@@ -364,6 +364,9 @@
     `(clojure-keyword-face ((t (:foreground ,orange))))
     `(clojure-interop-method-face ((t (:foreground ,default-text-color))))
 
+    ;; custom coverage
+    `(fringe-blue-face ((t (:foreground ,tardis))))
+
     ;; diff-hl
     `(diff-hl-insert ((t ,(if k9-diff-hl-inverse
                             `(:background ,bg :foreground ,lime)
